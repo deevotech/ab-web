@@ -1,0 +1,552 @@
+<%layout('../brand_header/layout')%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Buttons</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Buttons</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Row-->
+        <div class="row">
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Buttons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Bootstrap buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-secondary">Secondary</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-link">Link</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">The <code>.btn</code> classes are designed to be used with <code>&lt;button&gt;</code>, <code>&lt;a&gt;</code> and <code>&lt;input&gt;</code> elements.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <a class="btn btn-primary" href="#" role="button">Link</a>
+                                <button class="btn btn-success" type="submit">Button</button>
+                                <input class="btn btn-warning" type="button" value="Input">
+                                <input class="btn btn-info" type="submit" value="Submit">
+                                <input class="btn btn-danger" type="reset" value="Reset">
+                                <a href="#" class="btn btn-metal">Metal</a>
+                                <button type="button" class="btn btn-brand">Brand</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Button states:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-brand active">Active</button>
+                                <button type="button" class="btn btn-metal active">Active</button>
+                                <button type="button" class="btn btn-outline-danger active">Active</button>
+                                <button type="button" class="btn btn-accent disabled" disabled>Disabled</button>
+                                <button type="button" class="btn btn-success disabled" disabled>Disabled</button>
+                                <button type="button" class="btn btn-outline-success disabled" disabled>Disabled</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Keen custom buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-brand">Brand</button>
+                                <button type="button" class="btn btn-metal">Metal</button>
+                                <button type="button" class="btn btn-accent">Accent</button>
+                                <button type="button" class="btn btn-focus">Focus</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Keen base buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-default btn-bold btn-upper">Button</button>
+                                <button type="button" class="btn btn-clean btn-bold btn-upper">Button</button>
+                                <button type="button" class="btn btn-sm btn-default btn-bold btn-upper">Button</button>
+                                <button type="button" class="btn btn-sm btn-clean btn-bold btn-upper">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Button Customization</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Large buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-lg">Primary</button>
+                                <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+                                <button type="button" class="btn btn-success btn-lg">Success</button>
+                                <br>
+                                <br>
+                                <button type="button" class="btn btn-info btn-lg">Info</button>
+                                <button type="button" class="btn btn-warning btn-lg">Warning</button>
+                                <button type="button" class="btn btn-danger btn-lg">Danger</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Small buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-sm">Primary</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Secondary</button>
+                                <button type="button" class="btn btn-success btn-sm">Success</button>
+                                <button type="button" class="btn btn-info btn-sm">Info</button>
+                                <button type="button" class="btn btn-warning btn-sm">Warning</button>
+                                <button type="button" class="btn btn-dange btn-sm">Danger</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Font settings:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-info btn-font-lg">Large font</button>
+                                <button type="button" class="btn btn-success btn-font-sm">Small font</button>
+                                <button type="button" class="btn btn-primary btn-upper">Uppercase</button>
+                                <button type="button" class="btn btn-secondary btn-upper">Lowercase</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Wide buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-wide">Wide button</button>
+                                <button type="button" class="btn btn-secondary btn-wide">Wider button</button>
+                                <button type="button" class="btn btn-success btn-wide">Wides button</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Tall buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-tall">Tall button</button>
+                                <button type="button" class="btn btn-secondary btn-taller">Taller button</button>
+                                <button type="button" class="btn btn-success btn-tallest">Tallest button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Outline Buttons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Default outline buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-outline-primary">Primary</button>
+                                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                <button type="button" class="btn btn-outline-success">Success</button>
+                                <button type="button" class="btn btn-outline-info">Info</button>
+                                <button type="button" class="btn btn-outline-warning">Warning</button>
+                                <button type="button" class="btn btn-outline-danger">Danger</button>
+                                <button type="button" class="btn btn-outline-focus">Focus</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Hover outline buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-outline-hover-primary">Primary</button>
+                                <button type="button" class="btn btn-outline-hover-focus">Focus</button>
+                                <button type="button" class="btn btn-outline-hover-success">Success</button>
+                                <button type="button" class="btn btn-outline-hover-info">Info</button>
+                                <button type="button" class="btn btn-outline-hover-warning">Warning</button>
+                                <button type="button" class="btn btn-outline-hover-danger">Danger</button>
+                                <button type="button" class="btn btn-outline-hover-focus">Focus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Elevated Buttons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Default effect:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate">Light</button>&nbsp;
+                                <button type="button" class="btn btn-brand btn-elevate">Brand</button>&nbsp;
+                                <button type="button" class="btn btn-success btn-elevate">Success</button>&nbsp;
+                                <button type="button" class="btn btn-info btn-elevate">Info</button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate">Danger</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate">Focus</button>&nbsp;
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <button type="button" class="btn btn-light btn-elevate btn-pill">Light</button>&nbsp;
+                                <button type="button" class="btn btn-brand btn-elevate btn-pill">Brand</button>&nbsp;
+                                <button type="button" class="btn btn-success btn-elevate btn-pill">Success</button>&nbsp;
+                                <button type="button" class="btn btn-info btn-elevate btn-pill">Info</button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate btn-pill">Danger</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill">Focus</button>&nbsp;
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <button type="button" class="btn btn-light btn-elevate btn-pill btn-sm">Light</button>&nbsp;
+                                <button type="button" class="btn btn-brand btn-elevate btn-pill btn-sm">Brand</button>&nbsp;
+                                <button type="button" class="btn btn-success btn-elevate btn-pill btn-sm">Success</button>&nbsp;
+                                <button type="button" class="btn btn-info btn-elevate btn-pill btn-sm">Info</button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate btn-pill btn-sm">Danger</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill btn-sm">Focus</button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Hover air effect:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-brand btn-elevate btn-elevate-air">Brand</button>&nbsp;
+                                <button type="button" class="btn btn-success btn-elevate btn-elevate-air">Success</button>&nbsp;
+                                <button type="button" class="btn btn-info btn-elevate btn-elevate-air">Info</button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate btn-elevate-air">Danger</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-elevate-air">Focus</button>&nbsp;
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <button type="button" class="btn btn-brand btn-elevate btn-pill btn-elevate-air">Brand</button>&nbsp;
+                                <button type="button" class="btn btn-success btn-elevate btn-pill btn-elevate-air">Success</button>&nbsp;
+                                <button type="button" class="btn btn-info btn-elevate btn-pill btn-elevate-air">Info</button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate btn-pill btn-elevate-air">Danger</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill btn-elevate-air">Focus</button>&nbsp;
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <button type="button" class="btn btn-brand btn-elevate btn-pill btn-elevate-air btn-sm">Brand</button>&nbsp;
+                                <button type="button" class="btn btn-success btn-elevate btn-pill btn-elevate-air btn-sm">Success</button>&nbsp;
+                                <button type="button" class="btn btn-info btn-elevate btn-pill btn-elevate-air btn-sm">Info</button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate btn-pill btn-elevate-air btn-sm">Danger</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill btn-elevate-air btn-sm">Focus</button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Pill Buttons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Default options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-pill">Primary</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-pill">Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-pill">Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-pill">Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger btn-pill">Hover Outline</button>&nbsp;
+                                <button type="button" class="btn btn-light btn-hover-brand btn-pill">Hover Solid</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Elevation options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate-hover btn-pill">Hover Flat</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill">Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-elevate btn-pill">Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-elevate btn-pill">Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-info btn-elevate btn-pill">Hover Outline</button>&nbsp;
+                                <button type="button" class="btn btn-light btn-elevate btn-pill">Raise Elevation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Square Buttons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Default options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-square">Primary</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-square">Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-square">Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-square">Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger btn-square">Hover Outline</button>&nbsp;
+                                <button type="button" class="btn btn-light btn-hover-brand btn-square">Hover Solid</button>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Elevation options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate-hover btn-square">Hover Flat</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-square">Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-elevate btn-square">Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-elevate btn-square">Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-info btn-elevate btn-square">Hover Outline</button>&nbsp;
+                                <button type="button" class="btn btn-light btn-elevate btn-square">Raise Elevation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">With Icons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Default options with Fontawesome 5 icons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary"><i class="fa fa-dollar-sign"></i> Primary</button>&nbsp;
+                                <button type="button" class="btn btn-focus"><i class="fa fa-tag"></i> Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-undo"></i> Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand"><i class="fa fa-code"></i> Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger"><i class="fa fa-search"></i> Hover Outline</button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Elevation options with Lineawesome icons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate-hover btn-pill"><i class="la la-user"></i> Hover Flat</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill"><i class="la la-bank"></i> Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-elevate btn-pill"><i class="la la-bullhorn"></i> Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-elevate btn-pill"><i class="la la-cloud-download"></i> Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-info btn-elevate btn-pill"><i class="la la-copy"></i> Hover Outline</button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Pill options with Flaticon icons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate-hover btn-pill"><i class="flaticon-cogwheel"></i> Hover Flat</button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-pill"><i class="flaticon-business"></i> Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-elevate btn-pill"><i class="flaticon-notes"></i> Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-elevate btn-pill"><i class="flaticon-bell"></i> Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-info btn-elevate btn-pill"><i class="flaticon-light"></i> Hover Outline</button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Size options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-dollar-sign"></i> Primary</button>&nbsp;
+                                <button type="button" class="btn btn-focus"><i class="fa fa-tag"></i> Solid</button>&nbsp;
+                                <button type="button" class="btn btn-secondary  btn-lg"><i class="fa fa-undo"></i> Secondary</button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand"><i class="fa fa-code"></i> Outline</button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger btn-sm"><i class="fa fa-search"></i> Hover Outline</button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Icon Only</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Default options with Fontawesome 5 icons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-icon"><i class="fa fa-dollar-sign"></i></button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-icon"><i class="fa fa-tag"></i></button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-icon"><i class="fa fa-undo"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-icon"><i class="fa fa-code"></i></button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-icon"><i class="fa fa-tag"></i></button>&nbsp;
+                                <button type="button" class="btn btn-accent btn-icon"><i class="fa fa-check"></i></button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-icon"><i class="fa fa-car"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger btn-icon"><i class="fa fa-search"></i></button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Elevation options with Lineawesome icons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate-hover btn-icon"><i class="la la-user"></i></button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-icon"><i class="la la-bank"></i></button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-elevate btn-icon"><i class="la la-bullhorn"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-elevate btn-icon"><i class="la la-cloud-download"></i></button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-icon"><i class="la la-check"></i></button>&nbsp;
+                                <button type="button" class="btn btn-primary btn-elevate btn-icon"><i class="la la-cogs"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-accent btn-elevate btn-icon"><i class="la la-calendar"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-info btn-elevate btn-icon"><i class="la la-copy"></i></button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Circle options with Flaticon icons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-light btn-elevate-hover btn-circle btn-icon"><i class="flaticon-cogwheel"></i></button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-elevate btn-circle btn-icon"><i class="flaticon-business"></i></button>&nbsp;
+                                <button type="button" class="btn btn-secondary btn-elevate btn-circle btn-icon"><i class="flaticon-notes"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-elevate btn-circle btn-icon"><i class="flaticon-bell"></i></button>&nbsp;
+                                <button type="button" class="btn btn-warning btn-elevate btn-circle btn-icon"><i class="flaticon-technology-2"></i></button>&nbsp;
+                                <button type="button" class="btn btn-danger btn-elevate btn-circle btn-icon"><i class="flaticon-technology-1"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-info btn-elevate btn-circle btn-icon"><i class="flaticon-bell"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-info btn-elevate btn-circle btn-icon"><i class="flaticon-light"></i></button>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Size options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="fa fa-dollar-sign"></i></button>&nbsp;
+                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-circle"><i class="fa fa-dollar-sign"></i></button>&nbsp;
+                                <button type="button" class="btn btn-focus btn-icon"><i class="fa fa-tag"></i></button>&nbsp;
+                                <button type="button" class="btn btn-info btn-icon btn-circle"><i class="fa fa-tags"></i></button>&nbsp;
+                                <button type="button" class="btn btn-secondary  btn-lg btn-icon "><i class="fa fa-undo"></i></button>&nbsp;
+                                <button type="button" class="btn btn-secondary  btn-lg btn-icon btn-circle"><i class="fa fa-check"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-icon"><i class="fa fa-code"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-brand btn-icon btn-circle"><i class="fa fa-user"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger btn-sm btn-icon"><i class="fa fa-search"></i></button>&nbsp;
+                                <button type="button" class="btn btn-outline-hover-danger btn-sm btn-icon btn-circle"><i class="fa fa-calendar"></i></button>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Label Style</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">You can use the buttons styles for labels with <code>span</code> tag:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="btn btn-label-primary">Primary</span>&nbsp;
+                                <span class="btn btn-label-success">Success</span>&nbsp;
+                                <span class="btn btn-label-info">Info</span>&nbsp;
+                                <span class="btn btn-label-danger">Danger</span>&nbsp;
+                                <span class="btn btn-label-warning">Warning</span>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Label pill style:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="btn btn-label-primary btn-pill">Primary</span>&nbsp;
+                                <span class="btn btn-label-success btn-pill">Success</span>&nbsp;
+                                <span class="btn btn-label-info btn-pill">Info</span>&nbsp;
+                                <span class="btn btn-label-danger btn-pill">Danger</span>&nbsp;
+                                <span class="btn btn-label-warning btn-pill">Warning</span>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Link labels:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <a href="#" class="btn btn-label-primary btn-pill">Primary</a>&nbsp;
+                                <a href="#" class="btn btn-label-success btn-pill">Success</a>&nbsp;
+                                <a href="#" class="btn btn-label-info btn-pill">Info</a>&nbsp;
+                                <a href="#" class="btn btn-label-danger btn-pill">Danger</a>&nbsp;
+                                <a href="#" class="btn btn-label-warning btn-pill">Warning</a>&nbsp;
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__desc">Label sizing:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="btn btn-label-primary btn-sm">Primary</span>&nbsp;
+                                <span class="btn btn-label-success btn-sm">Success</span>&nbsp;
+                                <span class="btn btn-label-info btn-sm">Info</span>&nbsp;
+                                <span class="btn btn-label-danger btn-sm">Danger</span>&nbsp;
+                                <span class="btn btn-label-warning btn-sm">Warning</span>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+
+        <!--end::Row-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

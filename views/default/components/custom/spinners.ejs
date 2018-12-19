@@ -1,0 +1,187 @@
+<%layout('../brand_header/layout')%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Spinners</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Spinners</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Default Spinner</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Color and size options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--sm k-spinner--brand"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--sm k-spinner--success"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--md k-spinner--info"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--md k-spinner--accent"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--lg k-spinner--focus"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--lg k-spinner--warning"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__desc">Using with buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button class="btn btn-outline-success k-spinner k-spinner--sm k-spinner--danger">Button</button>&nbsp;
+                                <button class="btn btn-brand k-spinner k-spinner--right k-spinner--sm k-spinner--light">Button</button>&nbsp;
+                                <button class="btn btn-outline-accent k-spinner k-spinner--md k-spinner--danger">Button</button>&nbsp;
+                                <div class="k-space-20"></div>
+                                <button class="btn btn-primary k-spinner k-spinner--right k-spinner--md k-spinner--light">Button</button>&nbsp;
+                                <button class="btn btn-outline-dark k-spinner k-spinner--lg k-spinner--danger">Button</button>&nbsp;
+                                <button class="btn btn-danger k-spinner k-spinner--right k-spinner--lg k-spinner--light">Button</button>&nbsp;
+                                <div class="k-space-20"></div>
+                                <button class="btn btn-outline-success btn-icon"><i class="la la-user"></i></button>&nbsp;
+                                <button class="btn btn-brand btn-icon k-spinner k-spinner--center k-spinner--sm k-spinner--light"></button>&nbsp;
+                                <button class="btn btn-accent btn-icon btn-circle k-spinner k-spinner--center k-spinner--sm k-spinner--light"></button>&nbsp;
+                                <button class="btn btn-outline-dark btn-icon k-spinner k-spinner--center k-spinner--sm k-spinner--danger"></button>&nbsp;
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__desc">Using with form controls:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="k-spinner k-spinner--sm k-spinner--success k-spinner--right k-spinner--input">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="k-space-10"></div>
+                                <div class="k-spinner k-spinner--sm k-spinner--danger k-spinner--left k-spinner--input">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Default Spinner</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__desc">Color and size options:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--v2 k-spinner--sm k-spinner--brand"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--v2 k-spinner--sm k-spinner--success"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--v2 k-spinner--md k-spinner--info"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--v2 k-spinner--md k-spinner--accent"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--v2 k-spinner--lg k-spinner--focus"></div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="k-spinner k-spinner--v2 k-spinner--lg k-spinner--warning"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__desc">Using with buttons:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button class="btn btn-outline-success k-spinner k-spinner--v2 k-spinner--sm k-spinner--danger">Button</button>&nbsp;
+                                <button class="btn btn-brand k-spinner k-spinner--v2 k-spinner--right k-spinner--sm k-spinner--dark">Button</button>&nbsp;
+                                <button class="btn btn-outline-accent k-spinner k-spinner--v2 k-spinner--md k-spinner--danger">Button</button>&nbsp;
+                                <div class="k-space-20"></div>
+                                <button class="btn btn-primary k-spinner k-spinner--v2 k-spinner--right k-spinner--md k-spinner--warning">Button</button>&nbsp;
+                                <button class="btn btn-outline-dark k-spinner k-spinner--v2 k-spinner--lg k-spinner--danger">Button</button>&nbsp;
+                                <button class="btn btn-danger k-spinner k-spinner--v2 k-spinner--right k-spinner--lg k-spinner--success">Button</button>&nbsp;
+                                <div class="k-space-20"></div>
+                                <button class="btn btn-outline-success btn-icon"><i class="la la-user"></i></button>&nbsp;
+                                <button class="btn btn-brand btn-icon k-spinner k-spinner--v2 k-spinner--center k-spinner--sm k-spinner--primary"></button>&nbsp;
+                                <button class="btn btn-accent btn-icon btn-circle k-spinner k-spinner--v2 k-spinner--center k-spinner--sm k-spinner--danger"></button>&nbsp;
+                                <button class="btn btn-outline-dark btn-icon k-spinner k-spinner--v2 k-spinner--center k-spinner--sm k-spinner--danger"></button>&nbsp;
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__desc">Using with form controls:</div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="k-spinner k-spinner--v2 k-spinner--sm k-spinner--success k-spinner--right k-spinner--input">
+                                    <input type="text" class="form-control" />
+                                </div>
+                                <div class="k-space-10"></div>
+                                <div class="k-spinner k-spinner--v2 k-spinner--sm k-spinner--danger k-spinner--left k-spinner--input">
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->
