@@ -1,0 +1,90 @@
+<div class="k-section__content k-section__content--border">
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLongInner">
+        Launch inner scrolling modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLongInner" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="k-scroll" data-scroll="true" style="height: 400px;">
+                        <div class="col-lg-4 cl-left">
+                            <div class="form-group">
+                                <label>Custom Select</label>
+                                <div></div>
+                                <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+                            </div>
+                            <div class="form-group">
+                                    <label>Custom Select</label>
+                                    <div></div>
+                                    <select class="custom-select form-control">
+                                            <option selected="">Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="col-lg-8 col-right cl-right">
+                            <div class="k-portlet__body">
+                                <ul class="nav nav-tabs nav-tabs-line" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#k_tabs_1_1" role="tab">Messages</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" data-toggle="tab" href="#k_tabs_1_2">Action</a>
+                                            <a class="dropdown-item" data-toggle="tab" href="#k_tabs_1_2">Another action</a>
+                                            <a class="dropdown-item" data-toggle="tab" href="#k_tabs_1_2">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" data-toggle="tab" href="#k_tabs_1_2">Separated link</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#k_tabs_1_3" role="tab">Logs</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="k_tabs_1_1" role="tabpanel">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </div>
+                                    <div class="tab-pane" id="k_tabs_1_2" role="tabpanel">
+                                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </div>
+                                    <div class="tab-pane" id="k_tabs_1_3" role="tabpanel">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.modal-dialog {
+    max-width: 70% !important;
+}
+
+.cl-right, .cl-left {
+    float: left;
+}
+
+</style>
