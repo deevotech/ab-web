@@ -1,0 +1,212 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Badge</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Badge</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Row-->
+        <div class="row">
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Examples</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <h3 class="k-section__title">Scaling Examples</h3>
+                            <div class="k-section__info">Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <h1>Example heading <span class="badge badge-primary">New</span></h1>
+                                <h2>Example heading <span class="badge badge-danger">New</span></h2>
+                                <h3>Example heading <span class="badge badge-success">New</span></h3>
+                                <h4>Example heading <span class="badge badge-info">New</span></h4>
+                                <h5>Example heading <span class="badge badge-warning">New</span></h5>
+                                <h6>Example heading <span class="badge badge-link">New</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Buttons with Counter Badges Examples</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <h3 class="k-section__title">Basic Button Badges</h3>
+                            <div class="k-section__info">Badges can be used as part of buttons to provide a counter.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-primary">
+                                    Button Counter <span class="badge badge-light">1</span>
+                                </button>
+                                <button type="button" class="btn btn-danger">
+                                    Button Counter <span class="badge badge-light">2</span>
+                                </button>
+                                <button type="button" class="btn btn-success">
+                                    Button Counter <span class="badge badge-light">3</span>
+                                </button>
+                                <div class="k-separator k-separator--space-md k-separator--border-dashed"></div>
+                                <button type="button" class="btn btn-warning">
+                                    Button Counter <span class="badge badge-dark">5</span>
+                                </button>
+                                <button type="button" class="btn btn-dark">
+                                    Button Counter <span class="badge badge-light">6</span>
+                                </button>
+                                <button type="button" class="btn btn-light">
+                                    Button Counter <span class="badge badge-dark">7</span>
+                                </button>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <h3 class="k-section__title">Buttons Badges with Hidden Labels</h3>
+                            <div class="k-section__info">
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies. While the styling of badges provides a visual cue as to their purpose, these users will simply be presented with the content of the badge. Depending on the specific situation, these badges may seem like random additional words or numbers at the end of a sentence, link, or button.<br />
+                                <br />
+                                Unless the context is clear (as with the “Notifications” example, where it is understood that the “9” is the number of notifications), consider including additional context with a visually hidden piece of additional text.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <button type="button" class="btn btn-dark">
+                                    Hidden Unread Message Label <span class="badge badge-danger">9</span>
+                                    <span class="sr-only">unread messages</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Contextual variations</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">Add any of the below mentioned modifier classes to change the appearance of a badge.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="badge badge-primary">Primary</span>
+                                <span class="badge badge-secondary">Secondary</span>
+                                <span class="badge badge-success">Success</span>
+                                <span class="badge badge-danger">Danger</span>
+                                <span class="badge badge-warning">Warning</span>
+                                <span class="badge badge-info">Info</span>
+                                <span class="badge badge-light">Light</span>
+                                <span class="badge badge-dark">Dark</span>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__info">Conveying meaning to assistive technologies</div>
+                            <div class="k-section__info">
+                                Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code>.sr-only</code> class.
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Links Example</h3>
+                            <div class="k-section__info">Using the contextual <code>.badge-*</code> classes on an <code>&#x3C;a&#x3E;</code> element quickly provide actionable badges with hover and focus states.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <a href="#" class="badge badge-primary">Link Badge - Primary</a>
+                                <a href="#" class="badge badge-secondary">Link Badge - Secondary</a>
+                                <a href="#" class="badge badge-success">Link Badge - Success</a>
+                                <a href="#" class="badge badge-danger">Link Badge - Danger</a>
+                                <div class="k-separator k-separator--space-md k-separator--border-dashed"></div>
+                                <a href="#" class="badge badge-warning">Link Badge - Warning</a>
+                                <a href="#" class="badge badge-info">Link Badge - Info</a>
+                                <a href="#" class="badge badge-light">Link Badge - Light</a>
+                                <a href="#" class="badge badge-dark">Link Badge - Dark</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Pill badges</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">Use the <code>.badge-pill</code> modifier class to make badges more rounded (with a larger border-radius and additional horizontal padding). Useful if you miss the badges from v3.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="badge badge-pill badge-primary">Primary</span>
+                                <span class="badge badge-pill badge-secondary">Secondary</span>
+                                <span class="badge badge-pill badge-success">Success</span>
+                                <span class="badge badge-pill badge-danger">Danger</span>
+                                <span class="badge badge-pill badge-warning">Warning</span>
+                                <span class="badge badge-pill badge-info">Info</span>
+                                <span class="badge badge-pill badge-light">Light</span>
+                                <span class="badge badge-pill badge-dark">Dark</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+
+        <!--end::Row-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

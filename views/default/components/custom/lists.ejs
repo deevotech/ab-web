@@ -1,0 +1,301 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Lists</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Lists</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic List</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-list">
+                            <div class="k-list__item">
+                                <span class="k-list__text">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                <span class="k-list__time">Just now</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__text">Booking(<a href="#" class="k-link">ID:34523433</a>) has been accepted. Processing is pending</span>
+                                <span class="k-list__time">5 mins</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__text k-font-warning">New membership application has been recieved and pending for review</span>
+                                <span class="k-list__time">3 days</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__text">Company meeting has been scheduled by management for <span class="k-font-bold">20 Jan, 2018, 11:00AM</span></span>
+                                <span class="k-list__time">3 weeks</span>
+                            </div>
+                            <div class="k-list__item k-list__item--blur">
+                                <span class="k-list__text">Reservation has been canceled by customer and awaiting for reviewers action</span>
+                                <span class="k-list__time">24 Jan, 2018</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__text k-font-info">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                <span class="k-list__time">14 Feb, 2018</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__text">Booking(<a href="#" class="k-link">ID:23232323</a>) has been successully processed</span>
+                                <span class="k-list__time">Last year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">With Icons</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-list k-list--badge">
+                            <div class="k-list__item">
+                                <span class="k-list__badge"></span>
+                                <span class="k-list__icon"><i class="flaticon2-browser-2 k-font-success"></i></span>
+                                <span class="k-list__text">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                <span class="k-list__time">Just now</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge"></span>
+                                <span class="k-list__icon"><i class="flaticon2-graphic k-font-brand"></i></span>
+                                <span class="k-list__text">Booking(<a href="#" class="k-link">ID:34523433</a>) has been accepted. Processing is pending</span>
+                                <span class="k-list__time">5 mins</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-font-danger"></span>
+                                <span class="k-list__icon"><i class="flaticon2-schedule k-font-info"></i></span>
+                                <span class="k-list__text">New membership application has been recieved and pending for review</span>
+                                <span class="k-list__time">3 days</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge"></span>
+                                <span class="k-list__icon"><i class="flaticon2-layers-1 k-font-warning"></i></span>
+                                <span class="k-list__text">Company meeting has been scheduled by management for <span class="k-font-bold">20 Jan, 2018, 11:00AM</span></span>
+                                <span class="k-list__time">3 weeks</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge"></span>
+                                <span class="k-list__icon"><i class="flaticon2-position k-font-danger"></i></span>
+                                <span class="k-list__text">Reservation has been canceled by customer and awaiting for reviewers action</span>
+                                <span class="k-list__time">24 Jan, 2018</span>
+                            </div>
+                            <div class="k-list__item k-font-info">
+                                <span class="k-list__badge"></span>
+                                <span class="k-list__icon"><i class="flaticon2-medical-records k-font-dark"></i></span>
+                                <span class="k-list__text k-font-info">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                <span class="k-list__time">14 Feb, 2018</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge"></span>
+                                <span class="k-list__icon"><i class="flaticon2-chat-1 k-font-success"></i></span>
+                                <span class="k-list__text">Booking(<a href="#" class="k-link">ID:23232323</a>) has been successully processed</span>
+                                <span class="k-list__time">Last year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Scrollable List</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-scroll" data-scroll="true" data-mobile-height="250" style="height: 250px">
+                            <div class="k-list k-list--badge">
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--success"></span>
+                                    <span class="k-list__text">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                    <span class="k-list__time">Just now</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--danger"></span>
+                                    <span class="k-list__text">Booking(<a href="#" class="k-link">ID:34523433</a>) has been accepted. Processing is pending</span>
+                                    <span class="k-list__time">5 mins</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--focus"></span>
+                                    <span class="k-list__text  k-font-danger">New membership application has been recieved and pending for review</span>
+                                    <span class="k-list__time">3 days</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--primary"></span>
+                                    <span class="k-list__text">Company meeting has been scheduled by management for <span class="k-font-bold">20 Jan, 2018, 11:00AM</span></span>
+                                    <span class="k-list__time">3 weeks</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--info"></span>
+                                    <span class="k-list__text">Reservation has been canceled by customer and awaiting for reviewers action</span>
+                                    <span class="k-list__time">24 Jan, 2018</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--warning"></span>
+                                    <span class="k-list__text k-font-info">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                    <span class="k-list__time">14 Feb, 2018</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--brand"></span>
+                                    <span class="k-list__text">Booking(<a href="#" class="k-link">ID:23232323</a>) has been successully processed</span>
+                                    <span class="k-list__time">Last year</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--success"></span>
+                                    <span class="k-list__text">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                    <span class="k-list__time">Just now</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--danger"></span>
+                                    <span class="k-list__text">Booking(<a href="#" class="k-link">ID:34523433</a>) has been accepted. Processing is pending</span>
+                                    <span class="k-list__time">5 mins</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--focus"></span>
+                                    <span class="k-list__text  k-font-danger">New membership application has been recieved and pending for review</span>
+                                    <span class="k-list__time">3 days</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--primary"></span>
+                                    <span class="k-list__text">Company meeting has been scheduled by management for <span class="k-font-bold">20 Jan, 2018, 11:00AM</span></span>
+                                    <span class="k-list__time">3 weeks</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--info"></span>
+                                    <span class="k-list__text">Reservation has been canceled by customer and awaiting for reviewers action</span>
+                                    <span class="k-list__time">24 Jan, 2018</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--warning"></span>
+                                    <span class="k-list__text k-font-info">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                    <span class="k-list__time">14 Feb, 2018</span>
+                                </div>
+                                <div class="k-list__item">
+                                    <span class="k-list__badge k-list__badge--brand"></span>
+                                    <span class="k-list__text">Booking(<a href="#" class="k-link">ID:23232323</a>) has been successully processed</span>
+                                    <span class="k-list__time">Last year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">With Icon & States</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-list k-list--badge">
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--success"></span>
+                                <span class="k-list__icon"><i class="flaticon2-chronometer k-font-success"></i></span>
+                                <span class="k-list__text">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                <span class="k-list__time">Just now</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--danger"></span>
+                                <span class="k-list__icon"><i class="flaticon2-percentage k-font-danger"></i></span>
+                                <span class="k-list__text">Booking(<a href="#" class="k-link">ID:34523433</a>) has been accepted. Processing is pending</span>
+                                <span class="k-list__time">5 mins</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--focus"></span>
+                                <span class="k-list__icon"><i class="flaticon2-user k-font-focus"></i></span>
+                                <span class="k-list__text  k-font-danger">New membership application has been recieved and pending for review</span>
+                                <span class="k-list__time">3 days</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--primary"></span>
+                                <span class="k-list__icon"><i class="flaticon2-checking k-font-primary"></i></span>
+                                <span class="k-list__text">Company meeting has been scheduled by management for <span class="k-font-bold">20 Jan, 2018, 11:00AM</span></span>
+                                <span class="k-list__time">3 weeks</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--info"></span>
+                                <span class="k-list__icon"><i class="flaticon2-list-1 k-font-info"></i></span>
+                                <span class="k-list__text">Reservation has been canceled by customer and awaiting for reviewers action</span>
+                                <span class="k-list__time">24 Jan, 2018</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--warning"></span>
+                                <span class="k-list__icon"><i class="flaticon2-supermarket k-font-warning"></i></span>
+                                <span class="k-list__text k-font-info">New booking(<a href="#" class="k-link">ID:23232323</a>) has been placed and awaiting for approval</span>
+                                <span class="k-list__time">14 Feb, 2018</span>
+                            </div>
+                            <div class="k-list__item">
+                                <span class="k-list__badge k-list__badge--brand"></span>
+                                <span class="k-list__icon"><i class="flaticon2-pin k-font-brand"></i></span>
+                                <span class="k-list__text">Booking(<a href="#" class="k-link">ID:23232323</a>) has been successully processed</span>
+                                <span class="k-list__time">Last year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

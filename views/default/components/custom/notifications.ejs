@@ -1,0 +1,531 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Notifications</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Notifications</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-lg-4">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Notifications v1</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-notification k-notification--fit">
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon-security k-font-danger"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New order has been received
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        2 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-paperplane k-font-success"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New user feedback received
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        8 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-notification k-font-info"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        System reboot has been successfully completed
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        12 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item k-notification__item--read">
+                                <div class="k-notification__item-icon  k-font-warning">
+                                    <i class="flaticon2-shopping-cart"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        Company meeting canceled
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        19 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-heart-rate-monitor  k-font-focus"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New report has been received
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        23 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-layers k-font-primary"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        Finance report has been generated
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        25 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-pie-chart-1 k-font-brand"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New customer comment recieved
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        2 days ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-layers k-font-warning"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New customer is registered
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        3 days ago
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-lg-4">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Notifications v2</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-notification-v2 k-scroll" data-scroll="true" data-height="550" style="height: 550px">
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon-bell k-font-focus"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        5 new user generated report
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Reports based on sales
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon2-box k-font-danger"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        2 new items submited
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        by Grog John
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon-psd k-font-brand"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        79 PSD files generated
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Reports based on sales
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon2-supermarket k-font-warning"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        $2900 worth producucts sold
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Total 234 items
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon-paper-plane-1 k-font-accent"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        4.5h-avarage response time
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Fostest is Barry
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon k-font-danger">
+                                    <i class="flaticon-safe-shield-protection"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        3 Defence alerts
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        40% less alerts thar last week
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon k-font-brand">
+                                    <i class="flaticon-notepad"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        Avarage 4 blog posts per author
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Most posted 12 time
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon k-font-warning">
+                                    <i class="flaticon-users-1"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        16 authors joined last week
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        9 photodrapehrs, 7 designer
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon2-box k-font-info"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        2 new items have been submited
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        by Grog John
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon k-font-accent">
+                                    <i class="flaticon2-download"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        2.8 GB-total downloads size
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Mostly PSD end AL concepts
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon2-supermarket k-font-danger"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        $2900 worth producucts sold
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Total 234 items
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon-bell k-font-brand"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        7 new user generated report
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Reports based on sales
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification-v2__item">
+                                <div class="k-notification-v2__item-icon">
+                                    <i class="flaticon-paper-plane-1 k-font-accent"></i>
+                                </div>
+                                <div class="k-notification-v2__item-wrapper">
+                                    <div class="k-notification-v2__item-title">
+                                        4.5h-avarage response time
+                                    </div>
+                                    <div class="k-notification-v2__item-desc">
+                                        Fostest is Barry
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Notifications v3</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-notification k-scroll" data-scroll="true" data-height="550" style="height: 550px">
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-cube k-font-brand"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New order has been received
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        2 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-list-3 k-font-danger"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New customer is registered
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        3 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-notepad k-font-success"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        Application has been approved
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        3 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-paper k-font-info"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New file has been uploaded
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        5 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-graph-1 k-font-primary"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New user feedback received
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        8 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-layers-1 k-font-danger"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        System reboot has been successfully completed
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        12 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-rocket-travelling-space-transport k-font-success"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New order has been placed
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        15 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item k-notification__item--read">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-refresh k-font-warning"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        Company meeting canceled
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        19 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-pie-chart-4 k-font-danger"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New report has been received
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        23 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-download-symbol k-font-brand"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        Finance report has been generated
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        25 hrs ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-gear k-font-dark"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New customer comment recieved
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        2 days ago
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="k-notification__item">
+                                <div class="k-notification__item-icon">
+                                    <i class="flaticon2-cube k-font-info"></i>
+                                </div>
+                                <div class="k-notification__item-details">
+                                    <div class="k-notification__item-title">
+                                        New customer is registered
+                                    </div>
+                                    <div class="k-notification__item-time">
+                                        3 days ago
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

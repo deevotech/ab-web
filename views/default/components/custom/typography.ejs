@@ -1,0 +1,575 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Typography</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Typography</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Heading</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                You can use HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> as shown below:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <h1>h1. Heading 1</h1>
+                                <div class="k-space-10"></div>
+                                <h2>h2. Heading 2</h2>
+                                <div class="k-space-10"></div>
+                                <h3>h3. Heading 3</h3>
+                                <div class="k-space-10"></div>
+                                <h4>h4. Heading 4</h4>
+                                <div class="k-space-10"></div>
+                                <h5>h5. Heading 5</h5>
+                                <div class="k-space-10"></div>
+                                <h6>h6. Heading 6</h6>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Customize font colors using helper classes, <code>k-font-success</code> or <code>k-font-danger</code>:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <h1 class="k-font-success">h1. Heading 1</h1>
+                                <div class="k-space-10"></div>
+                                <h2 class="k-font-info">h2. Heading 2</h2>
+                                <div class="k-space-10"></div>
+                                <h3 class="k-font-warning">h3. Heading 3</h3>
+                                <div class="k-space-10"></div>
+                                <h4 class="k-font-danger">h4. Heading 4</h4>
+                                <div class="k-space-10"></div>
+                                <h5 class="k-font-focus">h5. Heading 5</h5>
+                                <div class="k-space-10"></div>
+                                <h6 class="k-font-primary">h6. Heading 6</h6>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Text</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Basic text font settings:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <p><span>Example text</span></p>
+                                <p><span class="k-font-bold">Example bold text</span></p>
+                                <p><span class="k-font-bolder">Example bolder text</span></p>
+                                <p><span class="k-font-boldest">Example boldest text</span></p>
+                                <p><span class="k-font-transform-u">Example uppercase text</span></p>
+                                <p><span class="k-font-transform-l">Example lowercase text</span></p>
+                                <p><span class="k-font-transform-c">Example capitalized text</span></p>
+                                <p><span class="k-font-transform-i">Example cursive text</span></p>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Color class helpers:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <p><span>Example text</span></p>
+                                <p><span class="k-font-bold k-font-success">Example bold text</span></p>
+                                <p><span class="k-font-bolder k-font-info">Example bolder text</span></p>
+                                <p><span class="k-font-boldest k-font-danger">Example boldest text</span></p>
+                                <p><span class="k-font-transform-u k-font-focus">Example uppercase text</span></p>
+                                <p><span class="k-font-transform-l k-font-warning">Example lowercase text</span></p>
+                                <p><span class="k-font-transform-c k-font-primary">Example capitalized text</span></p>
+                                <p><span class="k-font-transform-i k-font-accent">Example cursive text</span></p>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Common Elements</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Styling for common inline HTML5 text elements.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                                <p><u>This line of text will render as underlined</u></p>
+                                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                                <p><strong>This line rendered as bold text.</strong></p>
+                                <p><em>This line rendered as italicized text.</em></p>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Stylized implementation of HTML’s Abbreviations element:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <p><abbr title="attribute">attr</abbr></p>
+                                <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Quoting blocks of content:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                                <blockquote class="blockquote blockquote-reverse">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Heading</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Keen comes with multiple helper classes for heading text. Apply the heading class <code>k-heading</code> to any typogaphy element.
+                            </div>
+                            <div class="k-section__content  k-section__content--border">
+                                <div class="k-heading">Heading Typography</div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content  k-section__content--border">
+                                <div class="k-heading k-heading--center">Heading Typography Centered</div>
+                                <div class="k-heading k-heading--right">Heading Typography Right Aligned</div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content  k-section__content--border">
+                                <div class="k-heading k-heading--space-sm">Heading Typography SM Spacing</div>
+                                <div class="k-heading k-heading--space-md">Heading Typography MD Spacing</div>
+                                <div class="k-heading k-heading--space-lg">Heading Typography LG Spacing</div>
+                                <div class="k-heading k-heading--space-xl">Heading Typography XL Spacing</div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content  k-section__content--border">
+                                <div class="k-heading k-heading--sm">Heading Typography SM Font Size</div>
+                                <div class="k-heading k-heading--md">Heading Typography MD Font Size</div>
+                                <div class="k-heading k-heading--lg">Heading Typography LG Font Size</div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content  k-section__content--border">
+                                <div class="k-heading k-heading--bold">Heading Typography Bold</div>
+                                <div class="k-heading k-heading--thin">Heading Typography Thin</div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Badges</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Basic badges:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="k-badge k-badge--metal">4</span>&nbsp;
+                                <span class="k-badge k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--success">8</span>&nbsp;
+                                <span class="k-badge k-badge--info">11</span>&nbsp;
+                                <span class="k-badge k-badge--warning">2</span>&nbsp;
+                                <span class="k-badge k-badge--danger">5</span>
+                                <span class="k-badge k-badge--dark">5</span>
+                                <span class="k-badge k-badge--brand">11</span>&nbsp;
+                                <span class="k-badge k-badge--focus">2</span>&nbsp;
+                                <span class="k-badge k-badge--accent">5</span>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Badge sizes:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="k-badge k-badge--md k-badge--metal">4</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--success">8</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--info">11</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--warning">2</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--danger">5</span>
+                                <span class="k-badge k-badge--md k-badge--dark">5</span>
+                                <span class="k-badge k-badge--md k-badge--brand">11</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--focus">2</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--accent">5</span>
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <span class="k-badge k-badge--lg k-badge--metal">4</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--success">8</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--info">11</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--warning">2</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--danger">5</span>
+                                <span class="k-badge k-badge--lg k-badge--dark">5</span>
+                                <span class="k-badge k-badge--lg k-badge--brand">11</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--focus">2</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--accent">5</span>
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <span class="k-badge k-badge--xl k-badge--metal">5</span>&nbsp;
+                                <span class="k-badge k-badge--xl k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--xl k-badge--success">A</span>&nbsp;
+                                <span class="k-badge k-badge--xl k-badge--info">D</span>&nbsp;
+                                <span class="k-badge k-badge--xl k-badge--warning">C</span>&nbsp;
+                                <span class="k-badge k-badge--xl k-badge--danger">E</span>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Square style badges:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="k-badge k-badge--square k-badge--metal">4</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--success">8</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--info">11</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--warning">2</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--danger">5</span>
+                                <span class="k-badge k-badge--square k-badge--dark">5</span>
+                                <span class="k-badge k-badge--square k-badge--brand">11</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--focus">2</span>&nbsp;
+                                <span class="k-badge k-badge--square k-badge--accent">5</span>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Outline style badges:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="k-badge k-badge--outline k-badge--metal">4</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--success">8</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--info">11</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--warning">2</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--danger">5</span>
+                                <span class="k-badge k-badge--outline k-badge--dark">5</span>
+                                <span class="k-badge k-badge--outline k-badge--brand">11</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--focus">2</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--accent">5</span>
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--metal">4</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--primary">7</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--success">8</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--info">11</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--warning">2</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--danger">5</span>
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--dark">5</span>
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--brand">11</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--focus">2</span>&nbsp;
+                                <span class="k-badge k-badge--md k-badge--outline k-badge--accent">5</span>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Inline style badges:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <span class="k-badge k-badge--outline k-badge--inline k-badge--metal">Pending</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--inline k-badge--primary">Done</span>&nbsp;
+                                <span class="k-badge k-badge--outline k-badge--inline k-badge--success  k-badge--pill">Error</span>&nbsp;
+                                <span class="k-badge k-badge--inline k-badge--info">New</span>&nbsp;
+                                <span class="k-badge k-badge--inline k-badge--brand">Done</span>&nbsp;
+                                <span class="k-badge k-badge--inline k-badge--focus">Info</span>&nbsp;
+                                <span class="k-badge k-badge--inline k-badge--accent  k-badge--pill">Settled</span>
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <span class="k-badge k-badge--lg k-badge--outline k-badge--inline k-badge--metal">Pending</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--outline k-badge--inline k-badge--primary">Done</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--outline k-badge--inline k-badge--success  k-badge--pill">Error</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--inline k-badge--info">New</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--inline k-badge--brand">Done</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--inline k-badge--focus">Info</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--inline k-badge--accent  k-badge--pill">Settled</span>
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <span class="k-badge k-badge--lg k-badge--outline k-badge--outline-2x k-badge--inline k-badge--metal">Pending</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--outline k-badge--outline-2x k-badge--inline k-badge--primary">Done</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--outline k-badge--outline-2x k-badge--inline k-badge--success  k-badge--pill">Error</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--elevate k-badge--inline  k-badge--info">New</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--elevate k-badge--inline k-badge--brand">Done</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--elevate k-badge--inline k-badge--focus">Info</span>&nbsp;
+                                <span class="k-badge k-badge--lg k-badge--elevate k-badge--inline k-badge--accent  k-badge--pill">Settled</span>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Dot style badges:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                Some <span class="k-badge k-badge--dot k-badge--metal"></span>&nbsp;
+                                text <span class="k-badge k-badge--dot k-badge--primary"></span>&nbsp;
+                                goes <span class="k-badge k-badge--dot k-badge--success"></span>&nbsp;
+                                here <span class="k-badge k-badge--dot k-badge--info"></span>&nbsp; as example
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                Some <span class="k-badge k-badge--dot k-badge-- k-badge--metal"></span>&nbsp;
+                                text <span class="k-badge k-badge--dot k-badge--md k-badge--primary"></span>&nbsp;
+                                goes <span class="k-badge k-badge--dot k-badge--lg k-badge--success"></span>&nbsp;
+                                here <span class="k-badge k-badge--dot k-badge--xl k-badge--info"></span>&nbsp; as example
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Section</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__title">
+                                Section Title
+                            </div>
+                            <div class="k-section__desc">
+                                Section description text.
+                            </div>
+                            <div class="k-section__content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                Other info text.
+                            </div>
+                            <div class="k-section__content">
+                                Aipiscing ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Aadipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-solid"></div>
+                            <div class="k-section__desc">
+                                Other description text.
+                            </div>
+                            <div class="k-section__content">
+                                Aipiscing ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Aadipiscing elit, sed do eiusmod tempor, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Separator</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Common use separator elemements:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <div class="k-separator k-separator--space-lg  k-separator--border-solid"></div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Divider</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Common use devider elemements:
+                            </div>
+                            <div class="k-section__content  k-section__content--border">
+                                <div class="k-divider">
+                                    <span></span>
+                                    <span>OR</span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Links</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Basic link examples
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <p><a href="#" class="k-link">Example link</a></p>
+                                <p><a href="#" class="k-link k-font-bold">Example bold link</a></p>
+                                <p><a href="#" class="k-link k-font-bolder">Example bolder link</a></p>
+                                <p><a href="#" class="k-link k-font-boldest">Example boldest link</a></p>
+                                <p><a href="#" class="k-link k-font-transform-u">Example uppercase link</a></p>
+                            </div>
+                            <div class="k-separator k-separator--border-dashed k-separator--space-lg"></div>
+                            <div class="k-section__info">
+                                State colors
+                            </div>
+                            <div class="k-section__content  k-section__content--border">
+                                <p><a href="#" class="k-link k-link--success">Success state</a></p>
+                                <p><a href="#" class="k-link k-link--warning">Warning state</a></p>
+                                <p><a href="#" class="k-link k-link--info">Info state</a></p>
+                                <p><a href="#" class="k-link k-link--danger">Danger state</a></p>
+                                <p><a href="#" class="k-link k-link--primary">Primary state</a></p>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

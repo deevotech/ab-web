@@ -1,0 +1,903 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Dropdown</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Dropdown</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Row-->
+        <div class="row">
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Examples</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <h3 class="k-section__title">Single Button</h3>
+                            <div class="k-section__info">
+                                Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Dropdowns can be triggered from <code>&#x3C;a&#x3E;</code> or <code>&#x3C;button&#x3E;</code> elements to better fit your potential needs.
+                            </div>
+                            <div class="k-section__info">
+                                Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either <code>&#x3C;button&#x3E;</code> elements:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="dropdown dropdown-inline">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-hover-brand btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-hover-danger btn-elevate-hover btn-icon btn-sm btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-hover-brand btn-elevate-hover btn-icon btn-sm btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-default btn-icon btn-sm btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-icon btn-sm btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-brand btn-elevate-hover btn-icon btn-sm btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                And with <code>&#x3C;a&#x3E;</code> elements:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="dropdown dropdown-inline">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown link
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <a href="#" class="btn btn-hover-primary btn-elevate-hover btn-icon btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more-1"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <a href="#" class="btn btn-hover-info btn-elevate-hover btn-icon btn-icon-md " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more-1"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;
+                                <div class="dropdown dropdown-inline">
+                                    <a href="#" class="btn btn-success btn-elevate-hover btn-icon btn-icon-md btn-circle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="flaticon-more-1"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                            <div class="k-section__info">
+                                The best part is you can do this with any button variant, too:
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Primary
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Secondary
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Success
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Warning
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Danger
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Split button</h3>
+                            <div class="k-section__info">
+                                Similarly, create split button dropdowns with virtually the same markup as single button dropdowns, but with the addition of <code>.dropdown-toggle-split</code> for proper spacing around the dropdown caret.
+                            </div>
+                            <div class="k-section__info">
+                                We use this extra class to reduce the horizontal <code>padding</code> on either side of the caret by 25% and remove the <code>margin-left</code> that’s added for regular button dropdowns. Those extra changes keep the caret centered in the split button and provide a more appropriately sized hit area next to the main button.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">
+                                        Primary
+                                    </button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary">
+                                        Secondary
+                                    </button>
+                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success">
+                                        Success
+                                    </button>
+                                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning">
+                                        Warning
+                                    </button>
+                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Sizing Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Button dropdowns work with buttons of all sizes, including default and split dropdown buttons.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Large button
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg" type="button">
+                                        Large split button
+                                    </button>
+                                    <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Small button
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-sm" type="button">
+                                        Small split button
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Directions</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <h3 class="k-section__title">Dropup</h3>
+                            <div class="k-section__info">
+                                Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent element.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+
+                                <!-- Default dropup button -->
+                                <div class="btn-group dropup">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropup
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+
+                                <!-- Split dropup button -->
+                                <div class="btn-group dropup">
+                                    <button type="button" class="btn btn-secondary">
+                                        Split dropup
+                                    </button>
+                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Dropright</h3>
+                            <div class="k-section__info">
+                                Trigger dropdown menus at the right of the elements by adding <code>.dropright</code> to the parent element.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+
+                                <!-- Default dropright button -->
+                                <div class="btn-group dropright">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropright
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+
+                                <!-- Split dropright button -->
+                                <div class="btn-group dropright">
+                                    <button type="button" class="btn btn-secondary">
+                                        Split dropright
+                                    </button>
+                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropright</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Dropleft</h3>
+                            <div class="k-section__info">
+                                Trigger dropdown menus at the right of the elements by adding <code>.dropleft</code> to the parent element.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+
+                                <!-- Default dropright button -->
+                                <div class="btn-group dropleft">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropright
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+
+                                <!-- Split dropright button -->
+                                <div class="btn-group dropleft">
+                                    <button type="button" class="btn btn-secondary">
+                                        Split dropright
+                                    </button>
+                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropright</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Menu alignment</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add <code>.dropdown-menu-right</code> to a <code>.dropdown-menu</code> to right align the dropdown menu.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Right-aligned menu
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Action</button>
+                                        <button class="dropdown-item" type="button">Another action</button>
+                                        <button class="dropdown-item" type="button">Something else here</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Menu content</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <h3 class="k-section__title">Headers</h3>
+                            <div class="k-section__info">
+                                Add a header to label sections of actions in any dropdown menu.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Third action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Dropdown options</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Use <code>data-offset</code> or <code>data-reference</code> to change the location of the dropdown.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="d-flex">
+                                    <div class="dropdown mr-1">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                            Offset
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-secondary">Reference</button>
+                                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Menu items</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Historically dropdown menu contents had to be links, but that’s no longer the case with v4. Now you can optionally use <code>&#x3C;button&#x3E;</code> elements in your dropdowns instead of just <code>&#x3C;a&#x3E;</code>s.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <button class="dropdown-item" type="button">Action</button>
+                                        <button class="dropdown-item" type="button">Another action</button>
+                                        <button class="dropdown-item" type="button">Something else here</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                You can also create non-interactive dropdown items with <code>.dropdown-item-text</code>. Feel free to style further with custom CSS or text utilities.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <span class="dropdown-item-text">Dropdown item text</span>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Active</h3>
+                            <div class="k-section__info">
+                                Add <code>.active</code> to items in the dropdown to <strong>style them as active</strong>.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Regular link</a>
+                                        <a class="dropdown-item active" href="#">Active link</a>
+                                        <a class="dropdown-item" href="#">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Disabled</h3>
+                            <div class="k-section__info">
+                                Add <code>.disabled</code> to items in the dropdown to <strong>style them as disabled</strong>.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Regular link</a>
+                                        <a class="dropdown-item disabled" href="#">Active link</a>
+                                        <a class="dropdown-item" href="#">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Menu content</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <h3 class="k-section__title">Headers</h3>
+                            <div class="k-section__info">
+                                Add a header to label sections of actions in any dropdown menu.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <h6 class="dropdown-header">Dropdown header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Third action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Dividers</h3>
+                            <div class="k-section__info">
+                                Separate groups of related menu items with a divider.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Third action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Text</h3>
+                            <div class="k-section__info">
+                                Place any freeform text within a dropdown menu with text and use spacing utilities. Note that you’ll likely need additional sizing styles to constrain the menu width.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                                        <p>
+                                            Some example text that's free-flowing within the dropdown menu.
+                                        </p>
+                                        <p class="mb-0">
+                                            And this is more example text.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-separator k-separator--space-lg k-separator--border-dashed"></div>
+                        <div class="k-section">
+                            <h3 class="k-section__title">Forms Example 1</h3>
+                            <div class="k-section__info">
+                                Put a form within a dropdown menu, or make it into a dropdown menu, and use margin or padding utilities to give it the negative space you require.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <form class="px-4 py-3">
+                                            <div class="form-group">
+                                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleDropdownFormPassword1">Password</label>
+                                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="k-checkbox-single">
+                                                    <label class="k-checkbox">
+                                                        <input type="checkbox"> Remember me
+                                                        <span></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                        </form>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                        <a class="dropdown-item" href="#">Forgot password?</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <form class="dropdown-menu p-4" style="width:200px;">
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail2">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormPassword2">Password</label>
+                                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="k-checkbox-single">
+                                                <label class="k-checkbox">
+                                                    <input type="checkbox"> Remember me
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+
+        <!--end::Row-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

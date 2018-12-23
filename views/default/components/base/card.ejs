@@ -1,0 +1,593 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Cards</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Card</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Row-->
+        <div class="row">
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no margin by default, so use spacing utilities as needed.</div>
+                        </div>
+                        <div class="k-section__content k-section__content--border">
+                            <div class="card" style="width: 18rem;">
+                                <div class="k-bg-metal k-padding-50"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Card Body Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">The building block of a card is the <code>.card-body</code>. Use it whenever you need a padded section within a card.</div>
+                        </div>
+                        <div class="k-section__content k-section__content--border">
+                            <div class="card">
+                                <div class="card-body">
+                                    This is some text within a card body.
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-sm"></div>
+                            <div class="card">
+                                <div class="card-body k-bg-fill-primary">
+                                    This is some text within a card body. You can also change colors to fit your needs
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-sm"></div>
+                            <div class="card">
+                                <div class="card-body k-bg-fill-warning k-font-bolder">
+                                    Any color will do. You can also customize the font weight
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-sm"></div>
+                            <div class="card">
+                                <div class="card-body k-bg-fill-danger">
+                                    Another one for good measure :)
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-sm"></div>
+                            <div class="card">
+                                <div class="card-body k-bg-fill-focus">
+                                    Another one for good measure :)
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--space-sm"></div>
+                            <div class="card">
+                                <div class="card-body k-bg-fill-dark">
+                                    Another one for good measure :)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Titles, text, and links Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">Card titles are used by adding <code>.card-title</code> to a <code>&#x3C;h*&#x3E;</code> tag. In the same way, links are added and placed next to each other by adding .card-link to an <code>&#x3C;a&#x3E;</code> tag.<br />
+                                <br />
+                                Subtitles are used by adding a .card-subtitle to a <code>&#x3C;h*&#x3E;</code> tag. If the <code>.card-title</code> and the <code>.card-subtitle</code> items are placed in a <code>.card-body</code> item, the card title and subtitle are aligned nicely.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">List groups Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">Create lists of content in a card with a flush list group.</div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Kitchen sink Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Mix and match multiple content types to create the card you need, or throw everything in there. Shown below are image styles, blocks, text styles, and a list group—all wrapped in a fixed-width card.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="k-bg-metal k-padding-50"></div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">List groups with Header Example</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card w-50">
+                                    <div class="card-header k-font-bolder">
+                                        Header 1
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div>
+                                <div class="k-separator k-separator--space-md k-separator--border-dashed"></div>
+                                <div class="card w-50">
+                                    <div class="card-header k-font-bolder">
+                                        Header 2
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Headers and Footers</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Add an optional header and/or footer within a card.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="k-section__info">
+                                    Card headers can be styled by adding <code>.card-header</code> to <code>&#x3C;h*&#x3E;</code> and <code>.card-footer</code> elements.
+                                </div>
+                                <div class="card">
+                                    <div class="card-header k-font-bolder">
+                                        This is my header
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        This is my footer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Blockquotes</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Add an optional blockquote within a card.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card">
+                                    <div class="card-header k-font-bolder">
+                                        Quote
+                                    </div>
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Card Sizing</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Use our handful of available sizing utilities to quickly set a card’s width by adding <code>.w-*</code> to the <code>.card</code> element.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card w-75">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-priamry">Button</a>
+                                    </div>
+                                </div>
+                                <div class="k-separator k-separator--space-md k-separator--border-dashed"></div>
+                                <div class="card w-50">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Text Alignment</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                You can quickly change the text alignment of any card—in its entirety or specific parts—with our text align classes.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <div class="k-separator k-separator--space-md k-separator--border-dashed"></div>
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <div class="k-separator k-separator--space-md k-separator--border-dashed"></div>
+                                <div class="card text-right">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Card Groups</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Use card groups to render cards as a single, attached element with equal width and height columns. Card groups use <code>display: flex;</code> to achieve their uniform sizing.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card-group">
+                                    <div class="card">
+                                        <div class="k-bg-metal w-100 k-padding-t-40 k-padding-b-40"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="k-bg-metal w-100 k-padding-t-40 k-padding-b-40"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="k-bg-metal w-100 k-padding-t-40 k-padding-b-40"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                                            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Card Decks</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Need a set of equal width and height cards that aren’t attached to one another? Use card decks.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <div class="k-bg-metal w-100 k-padding-t-40 k-padding-b-40"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                        </div>
+                                        <div class="card-footer"><small>Last updated 3 mins ago</small></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="k-bg-metal w-100 k-padding-t-40 k-padding-b-40"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                        </div>
+                                        <div class="card-footer"><small>Last updated 3 mins ago</small></div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="k-bg-metal w-100 k-padding-t-40 k-padding-b-40"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                        </div>
+                                        <div class="card-footer"><small>Last updated 3 mins ago</small></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Card Masonry Columns</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Cards can be organized into Masonry-like columns with just CSS by wrapping them in <code>.card-columns</code>. Cards are built with CSS <code>column</code> properties instead of flexbox for easier alignment. Cards are ordered from top to bottom and left to right.<br />
+                                <br />
+                                <strong>Heads up!</strong> Your mileage with card columns may vary. To prevent cards breaking across columns, we must set them to <code>display: inline-block</code> as <code>column-break-inside: avoid</code> isn’t a bulletproof solution yet.
+                            </div>
+                            <div class="k-section__content k-section__content--border">
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <div class="k-bg-metal k-padding-50"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card p-3">
+                                        <blockquote class="blockquote mb-0 card-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer">
+                                                <small class="text-muted">
+                                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </small>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card">
+                                        <div class="k-bg-metal k-padding-50"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-primary text-white text-center p-3">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                                            <footer class="blockquote-footer">
+                                                <small class="k-font-light">
+                                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </small>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="k-bg-metal k-padding-50"></div>
+                                    </div>
+                                    <div class="card p-3 text-right">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer">
+                                                <small class="text-muted">
+                                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                                </small>
+                                            </footer>
+                                        </blockquote>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

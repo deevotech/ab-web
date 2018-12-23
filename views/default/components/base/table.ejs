@@ -1,0 +1,602 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Table</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Table</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Tables</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Using the most basic table markup, here’s how tables look in Keen:
+                            </div>
+                            <div class="k-section__content">
+                                <table class="table table-head-noborder">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                        <div class="k-separator k-separator--border-dashed k-separator--space-lg"></div>
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                You can also invert the colors with light text on dark backgrounds with <code>.table-dark</code>.
+                            </div>
+                            <div class="k-section__content">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Table Head Options</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Similar to default and inverse tables, use one of two modifier classes to make &lt;thead&gt;s appear light or dark gray.
+                            </div>
+                            <div class="k-section__content">
+                                <table class="table">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                        <div class="k-separator k-separator--border-dashed k-separator--space-lg"></div>
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content">
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Small Table</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Add <code>.table-sm</code> to make tables more compact by cutting cell padding in half.
+                            </div>
+                            <div class="k-section__content">
+                                <table class="table table-sm">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Striped Rows</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content">
+                                <table class="table table-striped m-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Bordered Table</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content">
+                                <table class="table table-bordered m-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Hoverable Table</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content">
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Table Row States</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-primary">
+                                            <th scope="row">1</th>
+                                            <td>Jhon</td>
+                                            <td>Stone</td>
+                                            <td>@jhon</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <th scope="row">2</th>
+                                            <td>Lisa</td>
+                                            <td>Nilson</td>
+                                            <td>@lisa</td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                        <tr class="table-warning">
+                                            <th scope="row">4</th>
+                                            <td>Nick</td>
+                                            <td>looper</td>
+                                            <td>@king</td>
+                                        </tr>
+                                        <tr class="table-danger">
+                                            <th scope="row">5</th>
+                                            <td>Joan</td>
+                                            <td>thestar</td>
+                                            <td>@joan</td>
+                                        </tr>
+                                        <tr class="table-dark">
+                                            <th scope="row">6</th>
+                                            <td>Sean</td>
+                                            <td>coder</td>
+                                            <td>@coder</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Responsive Tables</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section">
+                            <div class="k-section__info">
+                                Create responsive tables by wrapping any table with <code>.table-responsive</code> <code>DIV</code> to make them scroll horizontally on small devices (under 768px)
+                            </div>
+                            <div class="k-section__content">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

@@ -1,0 +1,149 @@
+<%layout(id)%>
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Invoice - v1</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Custom</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Invoices</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Invoice v1</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-xl-12">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-invoice-v1">
+                        <div class="k-invoice-v1__header">
+                            <h1 class="k-invoice-v1__title">INVOICE</h1>
+                            <div class="k-invoice-v1__brand">
+                                <div class="k-invoice-v1__logo">
+                                    <img src="../../assets/media/misc/invoice1-logo.png" class="k-invoice-v1__logoimage" title="Invoice" alt="Invoice" />
+                                </div>
+                                <div class="k-invoice-v1__company-info">
+                                    Cecilia Chapman, 711-2880 Nulla St., Mankato<br />
+                                    Mississippi 96522
+                                </div>
+                            </div>
+                            <div class="k-invoice-v1__details">
+                                <div class="k-invoice-v1__details-left">
+                                    <div class="k-invoice-v1__details-label">INVOICE TO:</div>
+                                    <div class="k-invoice-v1__details-value">
+                                        Iris Watson, P.O. Box 283 8562 Fusce Rd.<br />
+                                        Frederick Nebraska 20620
+                                    </div>
+                                </div>
+                                <div class="k-invoice-v1__details-right">
+                                    <div class="k-invoice-v1__details-date">
+                                        <div class="k-invoice-v1__details-label">DATE:</div>
+                                        <div class="k-invoice-v1__details-value">Dec 12, 2018</div>
+                                    </div>
+                                    <div class="k-invoice-v1__details-invoiceno">
+                                        <div class="k-invoice-v1__details-label">INVOICE NO:</div>
+                                        <div class="k-invoice-v1__details-value">GS000014</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-invoice-v1__body">
+                            <div class="table-responsive">
+                                <table class="k-invoice-v1__summary">
+                                    <thead class="k-invoice-v1__summary-header">
+                                        <tr>
+                                            <td>DESCRIPTION</td>
+                                            <td>HOURS</td>
+                                            <td>RATE</td>
+                                            <td>AMOUNT</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="k-invoice-v1__summary-body">
+                                        <tr>
+                                            <td>Creative Design</td>
+                                            <td>80</td>
+                                            <td>$40.00</td>
+                                            <td>$3200.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Front-End Development</td>
+                                            <td>120</td>
+                                            <td>$40.00</td>
+                                            <td>$4800.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Back-end Development</td>
+                                            <td>210</td>
+                                            <td>$60.00</td>
+                                            <td>$12600.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="k-invoice-v1__payment">
+                                <div class="k-invoice-v1__payment-left">
+                                    <div class="k-invoice-v1__payment-title">BANK TRANSFER</div>
+                                    <div class="k-invoice-v1__payment-account">
+                                        <div class="k-invoice-v1__payment-label">Account Name:</div>
+                                        <div class="k-invoice-v1__payment-value">Barclays UK</div>
+                                    </div>
+                                    <div class="k-invoice-v1__payment-account">
+                                        <div class="k-invoice-v1__payment-label">Account Number:</div>
+                                        <div class="k-invoice-v1__payment-value">1234567890934</div>
+                                    </div>
+                                    <div class="k-invoice-v1__payment-account">
+                                        <div class="k-invoice-v1__payment-label">Code:</div>
+                                        <div class="k-invoice-v1__payment-value">BARC0032UK</div>
+                                    </div>
+                                </div>
+                                <div class="k-invoice-v1__payment-right">
+                                    <div class="k-invoice-v1__payment-title">TOTAL AMOUNT</div>
+                                    <div class="k-invoice-v1__payment-total">$20,600.00</div>
+                                    <div class="k-invoice-v1__payment-tax">Taxes included</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>

@@ -1,0 +1,377 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Timeline</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Components</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Timeline</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Timeline</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--Begin::Timeline -->
+                        <div class="k-timeline">
+
+                            <!--Begin::Item -->
+                            <div class="k-timeline__item k-timeline__item--success">
+                                <div class="k-timeline__item-section">
+                                    <div class="k-timeline__item-section-border">
+                                        <div class="k-timeline__item-section-icon">
+                                            <i class="flaticon-psd  k-font-success"></i>
+                                        </div>
+                                    </div>
+                                    <span class="k-timeline__item-datetime">02:30 PM</span>
+                                </div>
+                                <a href="" class="k-timeline__item-text">
+                                    KeenThemes created new layout whith tens of<br> new options for Keen Admin panel
+                                </a>
+                                <div class="k-timeline__item-info">
+                                    HTML,CSS,VueJS
+                                </div>
+                            </div>
+
+                            <!--End::Item -->
+
+                            <!--Begin::Item -->
+                            <div class="k-timeline__item k-timeline__item--danger">
+                                <div class="k-timeline__item-section">
+                                    <div class="k-timeline__item-section-border">
+                                        <div class="k-timeline__item-section-icon">
+                                            <i class="flaticon-safe-shield-protection k-font-danger"></i>
+                                        </div>
+                                    </div>
+                                    <span class="k-timeline__item-datetime">01:20 AM</span>
+                                </div>
+                                <a href="" class="k-timeline__item-text">
+                                    New secyrity alert by Firewall & order to take<br> aktion on User Preferences
+                                </a>
+                                <div class="k-timeline__item-info">
+                                    Security, Fieewall
+                                </div>
+                            </div>
+
+                            <!--End::Item -->
+
+                            <!--Begin::Item -->
+                            <div class="k-timeline__item k-timeline__item--brand">
+                                <div class="k-timeline__item-section">
+                                    <div class="k-timeline__item-section-border">
+                                        <div class="k-timeline__item-section-icon">
+                                            <i class="flaticon2-box k-font-brand"></i>
+                                        </div>
+                                    </div>
+                                    <span class="k-timeline__item-datetime">Yestardey</span>
+                                </div>
+                                <a href="" class="k-timeline__item-text">
+                                    FlyMore design mock-ups been uploadet by<br> designers Bob, Naomi, Richard
+                                </a>
+                                <div class="k-timeline__item-info">
+                                    PSD, Sketch, AJ
+                                </div>
+                            </div>
+
+                            <!--End::Item -->
+
+                            <!--Begin::Item -->
+                            <div class="k-timeline__item k-timeline__item--warning">
+                                <div class="k-timeline__item-section">
+                                    <div class="k-timeline__item-section-border">
+                                        <div class="k-timeline__item-section-icon">
+                                            <i class="flaticon-pie-chart-1 k-font-warning"></i>
+                                        </div>
+                                    </div>
+                                    <span class="k-timeline__item-datetime">Aug 13,2018</span>
+                                </div>
+                                <a href="" class="k-timeline__item-text">
+                                    Meeting with Ken Digital Corp ot Unit14, 3<br> Edigor Buildings, George Street, Loondon<br> England, BA12FJ
+                                </a>
+                                <div class="k-timeline__item-info">
+                                    Meeting, Customer
+                                </div>
+                            </div>
+
+                            <!--End::Item -->
+
+                            <!--Begin::Item -->
+                            <div class="k-timeline__item k-timeline__item--info">
+                                <div class="k-timeline__item-section">
+                                    <div class="k-timeline__item-section-border">
+                                        <div class="k-timeline__item-section-icon">
+                                            <i class="flaticon-bell k-font-info"></i>
+                                        </div>
+                                    </div>
+                                    <span class="k-timeline__item-datetime">May 09, 2018</span>
+                                </div>
+                                <a href="" class="k-timeline__item-text">
+                                    KeenThemes created new layout whith tens of<br> new options for Keen Admin panel
+                                </a>
+                                <div class="k-timeline__item-info">
+                                    HTML,CSS,VueJS
+                                </div>
+                            </div>
+
+                            <!--End::Item -->
+
+                            <!--Begin::Item -->
+                            <div class="k-timeline__item k-timeline__item--accent">
+                                <div class="k-timeline__item-section">
+                                    <div class="k-timeline__item-section-border">
+                                        <div class="k-timeline__item-section-icon">
+                                            <i class="flaticon-users-1 k-font-accent"></i>
+                                        </div>
+                                    </div>
+                                    <span class="k-timeline__item-datetime">01:20 AM</span>
+                                </div>
+                                <a href="" class="k-timeline__item-text">
+                                    New secyrity alert by Firewall & order to take<br> aktion on User Preferences
+                                </a>
+                                <div class="k-timeline__item-info">
+                                    Security, Fieewall
+                                </div>
+                            </div>
+
+                            <!--End::Item -->
+                        </div>
+
+                        <!--End::Timeline -->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Scrollable Timeline</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+                        <div class="k-scroll" data-scroll="true" data-mobile-height="764" style="height: 945px; overflow: hidden;">
+
+                            <!--Begin::Timeline -->
+                            <div class="k-timeline">
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--accent">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-download-symbol k-font-accent"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">01:20 AM</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        New secyrity alert by Firewall & order to take<br> aktion on User references
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        Security, Fieewall
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--warning">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-hourglass k-font-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">May 09, 2018</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        KeenThemes created new layout whith tens of<br> new options for Keen Admin panel
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        HTML,CSS,VueJS
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--brand">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-pie-chart-4 k-font-brand"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">Aug 13,2018</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        Meeting with Ken Digital Corp ot Unit14, 3<br> Edigor Buildings, George Street, Loondon<br> England, BA12FJ
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        Meeting, Customer
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--danger">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-attention-exclamation-triangular-signal k-font-danger"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">Yestardey</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        FlyMore design mock-ups been uploadet by<br> designers Bob, Naomi, Richard
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        PSD, Sketch, AJ
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--info">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-photograph  k-font-info"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">01:20 AM</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        New secyrity alert by Firewall & order to take<br> aktion on User Preferences
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        Security, Fieewall
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--success">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-lorry k-font-success"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">02:30 PM</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        KeenThemes created new layout whith tens of<br> new options for Keen Admin panel
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        HTML,CSS,VueJS
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--warning">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-placeholder k-font-warning"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">Yestardey</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        FlyMore design mock-ups been uploadet by<br> designers Bob, Naomi, Richard
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        HTML,CSS,VueJS
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+
+                                <!--Begin::Item -->
+                                <div class="k-timeline__item k-timeline__item--brand">
+                                    <div class="k-timeline__item-section">
+                                        <div class="k-timeline__item-section-border">
+                                            <div class="k-timeline__item-section-icon">
+                                                <i class="flaticon2-open-text-book k-font-brand"></i>
+                                            </div>
+                                        </div>
+                                        <span class="k-timeline__item-datetime">02:30 PM</span>
+                                    </div>
+                                    <a href="" class="k-timeline__item-text">
+                                        KeenThemes created new layout whith tens of<br> new options for Keen Admin panel
+                                    </a>
+                                    <div class="k-timeline__item-info">
+                                        HTML,CSS,VueJS
+                                    </div>
+                                </div>
+
+                                <!--End::Item -->
+                            </div>
+
+                            <!--End::Timeline 1 -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->
