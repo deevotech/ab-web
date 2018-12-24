@@ -1,5 +1,3 @@
-# Thực hiện trên hệ điều hành Ubuntu
-	
 # Hướng dẫn cài đặt
 	//tạo thư mục chứa code dự án
 		mkdir collection-template
