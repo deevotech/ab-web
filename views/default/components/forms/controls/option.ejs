@@ -1,0 +1,315 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Options</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Controls</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Options</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Default Example</h3>
+                        </div>
+                    </div>
+
+                    <!--begin::Form-->
+                    <form class="k-form">
+                        <div class="k-portlet__body">
+                            <div class="form-group form-group-marginless">
+                                <label>Choose Delivery Type:</label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="k-option">
+                                            <span class="k-option__control">
+                                                <span class="k-radio k-radio--check-bold">
+                                                    <input type="radio" name="m_option_1" value="1" checked>
+                                                    <span></span>
+                                                </span>
+                                            </span>
+                                            <span class="k-option__label">
+                                                <span class="k-option__head">
+                                                    <span class="k-option__title">
+                                                        Standart Delevery
+                                                    </span>
+                                                    <span class="k-option__focus">
+                                                        Free
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__body">
+                                                    Estimated 14-20 Day Shipping
+                                                    (&nbsp;Duties end taxes may be due
+                                                    upon delivery&nbsp;)
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="k-option">
+                                            <span class="k-option__control">
+                                                <span class="k-radio k-radio--check-bold">
+                                                    <input type="radio" name="m_option_1" value="1">
+                                                    <span></span>
+                                                </span>
+                                            </span>
+                                            <span class="k-option__label">
+                                                <span class="k-option__head">
+                                                    <span class="k-option__title">
+                                                        Fast Delevery
+                                                    </span>
+                                                    <span class="k-option__focus">
+                                                        $&nbsp;8.00
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__body">
+                                                    Estimated 2-5 Day Shipping
+                                                    (&nbsp;Duties end taxes may be due
+                                                    upon delivery&nbsp;)
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--border-dashed k-separator--space-lg"></div>
+                            <div class="form-group">
+                                <label>Membership:</label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="k-option k-option k-option--plain">
+                                            <span class="k-option__control">
+                                                <span class="k-radio k-radio--check-bold">
+                                                    <input type="radio" name="m_option_1" value="1" checked>
+                                                    <span></span>
+                                                </span>
+                                            </span>
+                                            <span class="k-option__label">
+                                                <span class="k-option__head">
+                                                    <span class="k-option__title">
+                                                        Premium Partner
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__body">
+                                                    30 days free trial and lifetime free updates
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label class="k-option k-option k-option--plain">
+                                            <span class="k-option__control">
+                                                <span class="k-radio k-radio--check-bold">
+                                                    <input type="radio" name="m_option_1" value="1" checked>
+                                                    <span></span>
+                                                </span>
+                                            </span>
+                                            <span class="k-option__label">
+                                                <span class="k-option__head">
+                                                    <span class="k-option__title">
+                                                        Free Membership
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__body">
+                                                    24/7 support and Lifetime access
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-portlet__foot">
+                            <div class="k-form__actions">
+                                <button type="reset" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-lg-12 col-xl-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Horizontal Form Example</h3>
+                        </div>
+                    </div>
+
+                    <!--begin::Form-->
+                    <form class="k-form">
+                        <div class="k-portlet__body">
+                            <div class="form-group row form-group-marginless">
+                                <label class="col-lg-2 col-form-label">Delivery:</label>
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label class="k-option">
+                                                <span class="k-option__control">
+                                                    <span class="k-radio k-radio--bold k-radio--brand k-radio--check-bold" checked>
+                                                        <input type="radio" name="m_option_1" value="1">
+                                                        <span></span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__label">
+                                                    <span class="k-option__head">
+                                                        <span class="k-option__title">
+                                                            Standart Delevery
+                                                        </span>
+                                                        <span class="k-option__focus">
+                                                            Free
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-option__body">
+                                                        Estimated 14-20 Day Shipping
+                                                        (Duties end taxes may be due)
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label class="k-option">
+                                                <span class="k-option__control">
+                                                    <span class="k-radio k-radio--bold k-radio--brand">
+                                                        <input type="radio" name="m_option_1" value="1">
+                                                        <span></span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__label">
+                                                    <span class="k-option__head">
+                                                        <span class="k-option__title">
+                                                            Fast Delevery
+                                                        </span>
+                                                        <span class="k-option__focus">
+                                                            $&nbsp;8.00
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-option__body">
+                                                        Estimated 2-5 Day Shipping
+                                                        (Duties end taxes may be due)
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--border-dashed k-separator--space-lg"></div>
+                            <div class="form-group row form-group-marginless">
+                                <label class="col-lg-2 col-form-label">Full Name:</label>
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label class="k-option k-option--plain">
+                                                <span class="k-option__control">
+                                                    <span class="k-radio k-radio--brand">
+                                                        <input type="radio" name="m_option_1" value="1">
+                                                        <span></span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__label">
+                                                    <span class="k-option__head">
+                                                        <span class="k-option__title">
+                                                            Premium Partner
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-option__body">
+                                                        30 days free trial and lifetime free updates
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label class="k-option k-option--plain">
+                                                <span class="k-option__control">
+                                                    <span class="k-radio k-radio--brand">
+                                                        <input type="radio" name="m_option_1" value="1" checked>
+                                                        <span></span>
+                                                    </span>
+                                                </span>
+                                                <span class="k-option__label">
+                                                    <span class="k-option__head">
+                                                        <span class="k-option__title">
+                                                            Free Membership
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-option__body">
+                                                        24/7 support and Lifetime access
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-portlet__foot">
+                            <div class="k-form__actions">
+                                <button type="reset" class="btn btn-success">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

@@ -1,0 +1,243 @@
+<%layout(id)%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">noUiSlider</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Widgets</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">noUiSlider</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">noUiSlider Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--label-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Basic Setup</label>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <input type="text" class="form-control" id="k_nouislider_1_input" placeholder="Quantity">
+                                </div>
+                                <div class="col-8">
+                                    <div id="k_nouislider_1" class="nouislider-drag-danger"></div>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Input control is attached to slider</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Currency Formatting</label>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <input type="text" class="form-control" id="k_nouislider_2_input" placeholder="Currency">
+                                </div>
+                                <div class="col-8">
+                                    <div id="k_nouislider_2" class="nouislider nouislider--handle-danger"></div>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">To format the slider output, noUiSlider offers a format option.</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Slider With Tooltip</label>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                    <input type="text" class="form-control" id="k_nouislider_3_input" placeholder="Quantity">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" class="form-control" id="k_nouislider_3.1_input" placeholder="Quantity">
+                                </div>
+                                <div class="col-8">
+                                    <div id="k_nouislider_3" class="nouislider"></div>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Slider with tooltips to show slider values.</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Slider State Colors</label>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                    <select class="form-control" id="k_nouislider_input_select"></select>
+                                </div>
+                                <div class="col-2">
+                                    <input type="number" class="form-control" id="k_nouislider_input_number" placeholder="Quantity">
+                                </div>
+                                <div class="col-8">
+                                    <div id="k_nouislider_4" class="nouislider nouislider--handle-primary nouislider--connect-warning"></div>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Use state classes to change the slider's connect path and handle colors.</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Soft Limits</label>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <input type="text" class="form-control" id="k_nouislider_5_input" placeholder="Quantity">
+                                </div>
+                                <div class="col-8">
+                                    <div id="k_nouislider_5"></div>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted k-margin-t-20">Disables the edges of slider where handler bounces back when released</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Vertical Slider</label>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <input type="text" class="form-control" id="k_nouislider_6_input" placeholder="Quantity">
+                                </div>
+                                <div class="col-8">
+                                    <div id="k_nouislider_6"></div>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Vertical orientation slider example</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Modal Demos</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <a href="" class="btn btn-success" data-toggle="modal" data-target="#k_nouislider_modal">Launch modal examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="reset" class="btn btn-brand">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--begin::Modal-->
+        <div class="modal fade" id="k_nouislider_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bootstrap Date Picker Examples</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="la la-remove"></span>
+                        </button>
+                    </div>
+                    <form class="k-form k-form--fit k-form--label-align-right">
+                        <div class="modal-body">
+                            <div class="form-group row k-margin-t-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Basic Setup</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" id="k_nouislider_modal1_input" placeholder="Quantity">
+                                        </div>
+                                        <div class="col-6">
+                                            <div id="k_nouislider_modal1" class="nouislider-drag-danger"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row k-margin-t-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Currency Formatting</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" id="k_nouislider_modal2_input" placeholder="Quantity">
+                                        </div>
+                                        <div class="col-6">
+                                            <div id="k_nouislider_modal2" class="nouislider-drag-danger"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row k-margin-t-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Slider With Tooltip</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-3">
+                                            <input type="text" class="form-control" id="k_nouislider_modal1.1_input" placeholder="Quantity">
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="text" class="form-control" id="k_nouislider_modal1.2_input" placeholder="Quantity">
+                                        </div>
+                                        <div class="col-6">
+                                            <div id="k_nouislider_modal3" class="nouislider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-brand" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--end::Modal-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

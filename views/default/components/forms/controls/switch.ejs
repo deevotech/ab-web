@@ -1,0 +1,495 @@
+<%layout(id)%>
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Switch</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Controls</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Switch</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+        <div class="row">
+            <div class="col-md-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Basic Examples</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Form-->
+                        <form class="k-form">
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Default Switch</label>
+                                <div class="col-3">
+                                    <span class="k-switch">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="" />
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">With Icon</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--icon">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Unchacked State</label>
+                                <div class="col-3">
+                                    <span class="k-switch">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">With Icon</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--icon">
+                                        <label>
+                                            <input type="checkbox" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Disabled State</label>
+                                <div class="col-3">
+                                    <span class="k-switch">
+                                        <label>
+                                            <input type="checkbox" disabled name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">With Icon</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--icon">
+                                        <label>
+                                            <input type="checkbox" disabled name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!--end::Form-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Sizing</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Section-->
+                        <div class="k-section k-section--last">
+                            <div class="k-section__title">Large size:</div>
+                            <div class="k-section__content">
+
+                                <!--begin::Form-->
+                                <form class="k-form">
+                                    <div class="form-group row">
+                                        <label class="col-3 col-form-label">Default Switch</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--lg">
+                                                <label>
+                                                    <input type="checkbox" checked="checked" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <label class="col-3 col-form-label">With Icon</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--lg k-switch--icon">
+                                                <label>
+                                                    <input type="checkbox" checked="checked" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-3 col-form-label">Unchacked State</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--lg">
+                                                <label>
+                                                    <input type="checkbox" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <label class="col-3 col-form-label">With Icon</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--lg k-switch--icon">
+                                                <label>
+                                                    <input type="checkbox" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-3 col-form-label">Disabled State</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--lg">
+                                                <label>
+                                                    <input type="checkbox" disabled name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <label class="col-3 col-form-label">With Icon</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--lg k-switch--icon">
+                                                <label>
+                                                    <input type="checkbox" disabled name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!--end::Form-->
+                            </div>
+                            <div class="k-section__title">Small size:</div>
+                            <div class="k-section__content">
+
+                                <!--begin::Form-->
+                                <form class="k-form">
+                                    <div class="form-group row">
+                                        <label class="col-3 col-form-label">Default Switch</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--sm">
+                                                <label>
+                                                    <input type="checkbox" checked="checked" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <label class="col-3 col-form-label">With Icon</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--sm k-switch--icon">
+                                                <label>
+                                                    <input type="checkbox" checked="checked" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-3 col-form-label">Unchacked State</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--sm">
+                                                <label>
+                                                    <input type="checkbox" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <label class="col-3 col-form-label">With Icon</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--sm k-switch--icon">
+                                                <label>
+                                                    <input type="checkbox" name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-3 col-form-label">Disabled State</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--sm">
+                                                <label>
+                                                    <input type="checkbox" disabled name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <label class="col-3 col-form-label">With Icon</label>
+                                        <div class="col-3">
+                                            <span class="k-switch k-switch--sm k-switch--icon">
+                                                <label>
+                                                    <input type="checkbox" disabled name="">
+                                                    <span></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!--end::Form-->
+                            </div>
+                        </div>
+
+                        <!--end::Section-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-md-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Solid Style</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Form-->
+                        <form class="k-form">
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Success</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--success">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Focus</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--focus">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Info</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--info">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Danger</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--danger">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Primary</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--primary">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Accent</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--accent">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Brand</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--brand">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Metal</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--metal">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!--end::Form-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Outline Style</h3>
+                        </div>
+                    </div>
+                    <div class="k-portlet__body">
+
+                        <!--begin::Form-->
+                        <form class="k-form">
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Success</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--success">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Warning</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--focus">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Info</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--info">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Danger</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--danger">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Primary</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--primary">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Accent</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--accent">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-3 col-form-label">Brand</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--brand">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <label class="col-3 col-form-label">Metal</label>
+                                <div class="col-3">
+                                    <span class="k-switch k-switch--outline k-switch--icon k-switch--metal">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="">
+                                            <span></span>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!--end::Form-->
+                    </div>
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

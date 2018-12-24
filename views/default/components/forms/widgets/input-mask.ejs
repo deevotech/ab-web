@@ -1,0 +1,146 @@
+<%layout(id)%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Input Masks</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Widgets</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Input Masks</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Input Mask Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--label-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Date</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_1" type="text" />
+                            <span class="form-text text-muted">Custom date format: <code>mm/dd/yyyy</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Custom Placeholder</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_2" type="text" />
+                            <span class="form-text text-muted">Date mask with custom placeholder: <code>mm/dd/yyyy</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Phone Number</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_3" type="text" />
+                            <span class="form-text text-muted">Phone number mask: <code>(999) 999-9999</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Expty Placeholder</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_4" type="text" />
+                            <span class="form-text text-muted">Phone number mask: <code>99-9999999</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Repeating Mask</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_5" type="text" />
+                            <span class="form-text text-muted">Mask <code>9</code>, <code>99</code> or ... <code>9999999999</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Right Align</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_6" type="text" />
+                            <span class="form-text text-muted">Right aligned numeric mask</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Currency</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_7" type="text" />
+                            <span class="form-text text-muted">Currency format <code>€ ___.__1.234,56</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">IP Address</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_8" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Email Address</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_inputmask_9" type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="reset" class="btn btn-brand">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

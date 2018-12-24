@@ -1,0 +1,120 @@
+<%layout(id)%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Clipboard</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Widgets</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Clipboard</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Clipboard Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--fit k-form--label-align-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Basic Demo</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="k_clipboard_1" placeholder="Type some value to copy">
+                                <div class="input-group-append">
+                                    <a href="#" class="btn btn-secondary" data-clipboard="true" data-clipboard-target="#k_clipboard_1"><i class="la la-copy"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Copy From Textarea</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <textarea class="form-control" id="k_clipboard_2" rows="6">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</textarea>
+                            <div class="k-space-10"></div>
+                            <a href="#" class="btn btn-secondary" data-clipboard="true" data-clipboard-target="#k_clipboard_2"><i class="la la-clipboard"></i> Copy to clipboard</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Cut From Textarea</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <textarea class="form-control" id="k_clipboard_3" rows="6">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</textarea>
+                            <div class="k-space-10"></div>
+                            <a href="#" class="btn btn-brand" data-clipboard="true" data-clipboard-action="cut" data-clipboard-target="#k_clipboard_3"><i class="la la-cut"></i> Cut to clipboard</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Copy From Element</label>
+                        <div class="col-lg-6 col-md-9 col-sm-12">
+                            <div id="k_clipboard_4" style="border: 4px solid red; padding: 10px;">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</div>
+                            <div class="k-space-10"></div>
+                            <a href="#" class="btn btn-primary" data-clipboard="true" data-clipboard-target="#k_clipboard_4"><i class="la la-cut"></i> Copy to clipboard</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="reset" class="btn btn-success">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

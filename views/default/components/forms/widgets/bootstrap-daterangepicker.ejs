@@ -1,0 +1,255 @@
+<%layout(id)%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Bootstrap Daterangepicker</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Widgets</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Daterangepicker</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Bootstrap Date Range Picker Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--label-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Minimum Setup</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <input type='text' class="form-control" id="k_daterangepicker_1" readonly placeholder="Select time" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Input Group Setup</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group' id='k_daterangepicker_2'>
+                                <input type='text' class="form-control " readonly placeholder="Select date range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Icon Input</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class="k-input-icon pull-right" id='k_daterangepicker_3'>
+                                <input type="text" class="form-control " placeholder="Email">
+                                <span class="k-input-icon__icon k-input-icon__icon--right"><span><i class="la la-calendar-check-o"></i></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Date & Time Picker</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group pull-right' id='k_daterangepicker_4'>
+                                <input type='text' class="form-control " readonly placeholder="Select date & time range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Date Picker</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group pull-right' id='k_daterangepicker_5'>
+                                <input type='text' class="form-control " readonly placeholder="Select date range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Predefined Ranges</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group pull-right' id='k_daterangepicker_6'>
+                                <input type='text' class="form-control " readonly placeholder="Select date range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Modal Demos</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <a href="" class="btn btn-danger k-btn k-btn--pill" data-toggle="modal" data-target="#k_daterangepicker_modal">Launch modal Date Range Pickers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="submit" class="btn btn-brand">Submit</button>
+                                <button type="submit" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+
+        <!--begin::Modal-->
+        <div class="modal fade" id="k_daterangepicker_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Bootstrap Date Range Picker Examples</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="la la-remove"></span>
+                        </button>
+                    </div>
+                    <form class="k-form k-form--label-right">
+                        <div class="modal-body">
+                            <div class="form-group row k-margin-t-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Minimum Setup</label>
+                                <div class="col-lg-6 col-md-9 col-sm-12">
+                                    <input type='text' class="form-control" id="k_daterangepicker_1_modal" readonly placeholder="Select time" type="text" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Input Group Setup</label>
+                                <div class="col-lg-6 col-md-9 col-sm-12">
+                                    <div class='input-group' id='k_daterangepicker_2_modal'>
+                                        <input type='text' class="form-control " readonly placeholder="Select date range" />
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row k-margin-b-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Icon Input</label>
+                                <div class="col-lg-6 col-md-9 col-sm-12">
+                                    <div class="k-input-icon pull-right" id='k_daterangepicker_3_modal'>
+                                        <input type="text" class="form-control " placeholder="Email">
+                                        <span class="k-input-icon__icon k-input-icon__icon--right"><span><i class="la la-calendar-check-o"></i></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-brand k-btn" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary k-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--end::Modal-->
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Validation State Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--fit k-form--label-align-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row has-success">
+                        <label class="col-form-label col-lg-3 col-sm-12">Success State</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group' id='k_daterangepicker_1_validate'>
+                                <input type='text' class="form-control is-valid" readonly placeholder="Select date range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                                <div class="valid-feedback">Success! You've done it.</div>
+                            </div>
+                            <span class="form-text text-muted">Example help text that remains unchanged.</span>
+                        </div>
+                    </div>
+                    <div class="form-group row has-danger">
+                        <label class="col-form-label col-lg-3 col-sm-12">Danger State</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group' id='k_daterangepicker_2_validate'>
+                                <input type='text' class="form-control is-invalid" readonly placeholder="Select date range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                                <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+                            </div>
+                            <span class="form-text text-muted">Example help text that remains unchanged.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

@@ -142,6 +142,38 @@ module.exports = function(app, passport){
 
 	/////////////////////////////////////////////////////////////////////////////
 
+	app.get('/demo/navy-header',function(req, res) {
+		res.render('default/dashboards/navy_header',{id:'../navy_header/layout'});
+	});
+
+	app.get('/demo/navy-header/*',function(req, res) {
+
+		var path = url.parse(req.url);
+		var text = '/demo/navy-header/';
+		var dir = path.pathname.replace(text,'./views/default/') + '.ejs';
+		var send = path.pathname.replace(text,'default/') + '.ejs';
+		var layout='';
+
+		if(path.pathname.split('/').length == 7){
+			layout='../../../navy_header/layout';
+		}else if(path.pathname.split('/').length == 6){
+			layout='../../navy_header/layout';
+		}else{
+			layout='../navy_header/layout';
+		}
+
+
+		fs.exists(dir,function(e){
+			if(e==true){
+				res.render(send,{id:layout});
+			}else{
+				res.render('default/custom/error/404-v4',{id:'../../brand_header/layout'});
+			}
+		});
+	});
+
+	/////////////////////////////////////////////////////////////////////////////
+
 	// app.get('/demo/brand-header/components/base/alert',function(req, res) {
 	// 	res.render('default/components/base/alert',{id:'../../brand_header/layout'});
 	// });

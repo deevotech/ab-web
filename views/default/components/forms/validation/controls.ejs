@@ -1,0 +1,424 @@
+<%layout(id)%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Form Controls</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Validation</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Controls</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Portlet-->
+        <div class="row">
+            <div class="col-lg-6">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Default Validation</h3>
+                        </div>
+                    </div>
+
+                    <!--begin::Form-->
+                    <form class="k-form k-form--label-right" id="k_form_1">
+                        <div class="k-portlet__body">
+                            <div class="form-group form-group-last k-hide">
+                                <div class="alert alert-danger" role="alert" id="k_form_1_msg">
+                                    <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                                    <div class="alert-text">
+                                        Oh snap! Change a few things up and try submitting again.
+                                    </div>
+                                    <div class="alert-close">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true"><i class="la la-close"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Email *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <input type="text" class="form-control" name="email" placeholder="Enter your email">
+                                    <span class="form-text text-muted">We'll never share your email with anyone else.</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">URL *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="url" placeholder="Enter your url">
+                                        <div class="input-group-append"><span class="input-group-text">.via.com</span></div>
+                                    </div>
+                                    <span class="form-text text-muted">Please enter your website URL.</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Digits</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="k-input-icon k-input-icon--left">
+                                        <input type="text" class="form-control" name="digits" placeholder="Enter digits">
+                                        <span class="k-input-icon__icon k-input-icon__icon--left"><span><i class="la la-calculator"></i></span></span>
+                                    </div>
+                                    <span class="form-text text-muted">Please enter only digits</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Credit Card</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="creditcard" placeholder="Enter card number">
+                                        <div class="input-group-append"><span class="input-group-text"><i class="la la-credit-card"></i></span></div>
+                                    </div>
+                                    <span class="form-text text-muted">Please enter your credit card number</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">US Phone</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="phone" placeholder="Enter phone">
+                                        <div class="input-group-append"><a href="#" class="btn btn-brand btn-icon"><i class="la la-phone"></i></a></div>
+                                    </div>
+                                    <span class="form-text text-muted">Please enter your US phone number</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Option *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12 form-group-sub">
+                                    <select class="form-control" name="option">
+                                        <option value="">Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <span class="form-text text-muted">Please select an option.</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Options *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12 form-group-sub">
+                                    <select class="form-control" name="options" multiple size="5">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <span class="form-text text-muted">Please select at least one or maximum 4 options</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Memo *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <textarea class="form-control" name="memo" placeholder="Enter a menu" rows="8"></textarea>
+                                    <span class="form-text text-muted">Please enter a menu within text length range 10 and 100.</span>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--border-dashed k-separator--space-xl"></div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Checkbox *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="k-checkbox-inline">
+                                        <label class="k-checkbox">
+                                            <input type="checkbox" name="checkbox"> Tick me
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <span class="form-text text-muted">Please tick the checkbox</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Checkboxes *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="k-checkbox-list">
+                                        <label class="k-checkbox">
+                                            <input type="checkbox" name="checkboxes"> Option 1
+                                            <span></span>
+                                        </label>
+                                        <label class="k-checkbox">
+                                            <input type="checkbox" name="checkboxes"> Option 2
+                                            <span></span>
+                                        </label>
+                                        <label class="k-checkbox">
+                                            <input type="checkbox" name="checkboxes"> Option 3
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <span class="form-text text-muted">Please select at lease 1 and maximum 2 options</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Radios *</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="k-radio-inline">
+                                        <label class="k-radio">
+                                            <input type="checkbox" name="radio"> Option 1
+                                            <span></span>
+                                        </label>
+                                        <label class="k-radio">
+                                            <input type="checkbox" name="radio"> Option 2
+                                            <span></span>
+                                        </label>
+                                        <label class="k-radio">
+                                            <input type="radio" name="radio"> Option 3
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <span class="form-text text-muted">Please select an option</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-portlet__foot">
+                            <div class="k-form__actions">
+                                <div class="row">
+                                    <div class="col-lg-9 ml-lg-auto">
+                                        <button type="submit" class="btn btn-accent">Validate</button>
+                                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+            <div class="col-lg-6">
+                <div class="k-portlet">
+                    <div class="k-portlet__head">
+                        <div class="k-portlet__head-label">
+                            <h3 class="k-portlet__head-title">Advanced Validation</h3>
+                        </div>
+                    </div>
+
+                    <!--begin::Form-->
+                    <form class="k-form k-form--label-right" id="k_form_2">
+                        <div class="k-portlet__body">
+                            <div class="k-section">
+                                <h3 class="k-section__title">
+                                    Billing Information:
+                                </h3>
+                                <div class="k-section__content">
+                                    <div class="form-group row">
+                                        <div class="col-lg-12">
+                                            <label class="form-control-label">* Cardholder Name:</label>
+                                            <input type="text" name="billing_card_name" class="form-control" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12">
+                                            <label class="form-control-label">* Card Number:</label>
+                                            <input type="text" name="billing_card_number" class="form-control" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-last row">
+                                        <div class="col-lg-4 form-group-sub">
+                                            <label class="form-control-label">* Exp Month:</label>
+                                            <select class="form-control" name="billing_card_exp_month">
+                                                <option value="">Select</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 form-group-sub">
+                                            <label class="form-control-label">* Exp Year:</label>
+                                            <select class="form-control" name="billing_card_exp_year">
+                                                <option value="">Select</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 form-group-sub">
+                                            <label class="form-control-label">* CVV:</label>
+                                            <input type="number" class="form-control" name="billing_card_cvv" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--border-dashed k-separator--space-xl"></div>
+                            <div class="k-section">
+                                <h3 class="k-section__title">
+                                    Billing Address
+                                    <i data-toggle="k-tooltip" data-width="auto" class="k-section__help" title="If different than the corresponding address"></i>
+                                </h3>
+                                <div class="k-section__content">
+                                    <div class="form-group row">
+                                        <div class="col-lg-12">
+                                            <label class="form-control-label">* Address 1:</label>
+                                            <input type="text" name="billing_address_1" class="form-control" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12">
+                                            <label class="form-control-label">Address 2:</label>
+                                            <input type="text" name="billing_address_2" class="form-control" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group-last row">
+                                        <div class="col-lg-5 form-group-sub">
+                                            <label class="form-control-label">* City:</label>
+                                            <input type="text" class="form-control" name="billing_city" placeholder="" value="">
+                                        </div>
+                                        <div class="col-lg-5 form-group-sub">
+                                            <label class="form-control-label">* State:</label>
+                                            <input type="text" class="form-control" name="billing_state" placeholder="" value="">
+                                        </div>
+                                        <div class="col-lg-2 form-group-sub">
+                                            <label class="form-control-label">* ZIP:</label>
+                                            <input type="text" class="form-control" name="billing_zip" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="k-separator k-separator--border-dashed k-separator--space-xl"></div>
+                            <div class="k-section">
+                                <h3 class="k-section__title k-margin-b-20">
+                                    Delivery Type:
+                                </h3>
+                                <div class="k-section__content">
+                                    <div class="form-group form-group-last">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label class="k-option">
+                                                    <span class="k-option__control">
+                                                        <span class="k-radio k-radio--state-brand">
+                                                            <input type="radio" name="billing_delivery" value="">
+                                                            <span></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-option__label">
+                                                        <span class="k-option__head">
+                                                            <span class="k-option__title">
+                                                                Standart Delevery
+                                                            </span>
+                                                            <span class="k-option__focus">
+                                                                Free
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-option__body">
+                                                            Estimated 14-20 Day Shipping
+                                                            (&nbsp;Duties end taxes may be due
+                                                            upon delivery&nbsp;)
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label class="k-option">
+                                                    <span class="k-option__control">
+                                                        <span class="k-radio k-radio--state-brand">
+                                                            <input type="radio" name="billing_delivery" value="">
+                                                            <span></span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="k-option__label">
+                                                        <span class="k-option__head">
+                                                            <span class="k-option__title">
+                                                                Fast Delevery
+                                                            </span>
+                                                            <span class="k-option__focus">
+                                                                $&nbsp;8.00
+                                                            </span>
+                                                        </span>
+                                                        <span class="k-option__body">
+                                                            Estimated 2-5 Day Shipping
+                                                            (&nbsp;Duties end taxes may be due
+                                                            upon delivery&nbsp;)
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-text text-muted">
+
+                                            <!--must use this helper element to display error message for the options-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="k-portlet__foot">
+                            <div class="k-form__actions">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn btn-accent">Validate</button>
+                                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--end::Form-->
+                </div>
+
+                <!--end::Portlet-->
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->

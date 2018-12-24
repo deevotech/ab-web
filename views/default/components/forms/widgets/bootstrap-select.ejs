@@ -1,0 +1,523 @@
+<%layout(id)%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Bootstrap Select</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Widgets</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Bootstrap Select</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Bootstrap Select Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--label-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Minimum Setup</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Options Size</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" data-size="4">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Tent</option>
+                                <option>Flashlight</option>
+                                <option>Toilet Paper</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Optgroups Example</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <optgroup label="Picnic" data-max-options="2">
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </optgroup>
+                                <optgroup label="Camping" data-max-options="2">
+                                    <option>Tent</option>
+                                    <option>Flashlight</option>
+                                    <option>Toilet Paper</option>
+                                </optgroup>
+                            </select>
+                            <span class="form-text text-muted">Select boxes with optgroups</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Multiple Select</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" multiple>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Live Search</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" data-live-search="true">
+                                <option>Hot Dog, Fries and a Soda</option>
+                                <option>Burger, Shake and a Smile</option>
+                                <option>Sugar, Spice and all things nice</option>
+                            </select>
+                            <span class="form-text text-muted">You can add a search input by passing <code>data-live-search="true"</code> attribute</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Key Words</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" data-live-search="true">
+                                <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                            </select>
+                            <span class="form-text text-muted">Add key words to options to improve their searchability using <code>data-tokens</code></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Limited Selection</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control form-control--fixed k_selectpicker" multiple data-max-options="2" data-width="200">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <select class="form-control form-control--fixed k_selectpicker" multiple data-width="200">
+                                <optgroup label="Condiments" data-max-options="2">
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </optgroup>
+                                <optgroup label="Breads" data-max-options="2">
+                                    <option>Plain</option>
+                                    <option>Steamed</option>
+                                    <option>Toasted</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Placeholder</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" title="Choose one of the following...">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Selected Text</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" title="Choose one of the following...">
+                                <option title="Combo 1">Hot Dog, Fries and a Soda</option>
+                                <option title="Combo 2" selected>Burger, Shake and a Smile</option>
+                                <option title="Combo 3">Sugar, Spice and all things nice</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Selected Text Format</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" multiple data-selected-text-format="count">
+                                <option title="Combo 1">Hot Dog, Fries and a Soda</option>
+                                <option title="Combo 2">Burger, Shake and a Smile</option>
+                                <option title="Combo 3" selected>Sugar, Spice and all things nice</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" multiple data-selected-text-format="count > 3">
+                                <option title="Combo 1" selected>Hot Dog, Fries and a Soda</option>
+                                <option title="Combo 2">Burger, Shake and a Smile</option>
+                                <option title="Combo 3">Sugar, Spice and all things nice</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Style Options</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" title="">
+                                <option class="m--bg-success k-font-inverse-success">Mustard</option>
+                                <option class="m--bg-warning k-font-inverse-warning">Ketchup</option>
+                                <option class="m--bg-brand k-font-inverse-brand">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Width Options</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" data-width="" title="Auto">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" data-width="200px" title="Fixed: 200px">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" data-width="75%" title="Fixed: 75%">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Icons</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <option data-icon="la la-bullhorn">Mustard</option>
+                                <option data-icon="la la-bookmark">Ketchup</option>
+                                <option data-icon="la la-calendar-check-o">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Custom Content</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <option data-content="<span class='k-badge k-badge--success k-badge--inline k-badge--rounded'>Relish</span>">Mustard</option>
+                                <option data-content="<span class='k-badge k-badge--warning k-badge--inline k-badge--rounded'>Ketchup</span>">Ketchup</option>
+                                <option data-content="<span class='k-badge k-badge--brand k-badge--inline k-badge--rounded'>Relish</span>">Relish</option>
+                                <option data-content="<span class='k-badge k-badge--danger k-badge--inline k-badge--rounded'>Chili</span>">Chili</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Subtext</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <option data-subtext="French's">Mustard</option>
+                                <option data-subtext="Heinz">Ketchup</option>
+                                <option data-subtext="Sweet">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Select/deselect all options</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" multiple data-actions-box="true">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mayonnaise</option>
+                                <option>Barbecue Sauce</option>
+                                <option>Salad Dressing</option>
+                                <option>Tabasco</option>
+                                <option>Salsa</option>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mayonnaise</option>
+                                <option>Barbecue Sauce</option>
+                                <option>Salad Dressing</option>
+                                <option>Tabasco</option>
+                                <option>Salsa</option>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                                <option>Mayonnaise</option>
+                                <option>Barbecue Sauce</option>
+                                <option>Salad Dressing</option>
+                                <option>Tabasco</option>
+                                <option>Salsa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Divider</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <option data-subtext="French's">Mustard</option>
+                                <option data-subtext="Heinz">Ketchup</option>
+                                <option data-divider="true"></option>
+                                <option data-subtext="Sweet">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Menu Header</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" data-header="Select an option">
+                                <option data-subtext="French's">Mustard</option>
+                                <option data-subtext="Heinz">Ketchup</option>
+                                <option data-subtext="Sweet">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Disabled</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" disabled>
+                                <option data-subtext="French's">Mustard</option>
+                                <option data-subtext="Heinz">Ketchup</option>
+                                <option data-subtext="Sweet">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Disabled Options</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker">
+                                <option data-subtext="French's">Mustard</option>
+                                <option data-subtext="Heinz" disabled>Ketchup</option>
+                                <option data-subtext="Sweet">Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Button States</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control k_selectpicker" title="Success" data-style="btn-success">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" title="Warning" data-style="btn-warning">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" title="Danger" data-style="btn-danger">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" title="Brand" data-style="btn-brand">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="k-space-10"></div>
+                            <select class="form-control k_selectpicker" title="Primary" data-style="btn-primary">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Modal Demos</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <a href="" class="btn btn-success k-btn k-btn--pill" data-toggle="modal" data-target="#m_select_modal">Launch modal examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="reset" class="btn btn-brand">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+
+        <!--begin::Modal-->
+        <div class="modal fade" id="m_select_modal" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Bootstrap Touchspin Examples</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="la la-remove"></span>
+                        </button>
+                    </div>
+                    <form class="k-form k-form--label-right">
+                        <div class="modal-body">
+                            <div class="form-group row k-margin-t-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Standard Input</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <input type="text" class="form-control" value="Some value" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Minimum Setup</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <select class="form-control k_selectpicker">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Optgroups Example</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <select class="form-control k_selectpicker">
+                                        <optgroup label="Picnic" data-max-options="2">
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Relish</option>
+                                        </optgroup>
+                                        <optgroup label="Camping" data-max-options="2">
+                                            <option>Tent</option>
+                                            <option>Flashlight</option>
+                                            <option>Toilet Paper</option>
+                                        </optgroup>
+                                    </select>
+                                    <span class="form-text text-muted">Select boxes with optgroups</span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-3 col-sm-12">Multiple Select</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <select class="form-control k_selectpicker" multiple>
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row k-margin-b-20">
+                                <label class="col-form-label col-lg-3 col-sm-12">Live Search</label>
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <select class="form-control k_selectpicker" data-live-search="true">
+                                        <option>Hot Dog, Fries and a Soda</option>
+                                        <option>Burger, Shake and a Smile</option>
+                                        <option>Sugar, Spice and all things nice</option>
+                                    </select>
+                                    <span class="form-text text-muted">You can add a search input by passing <code>data-live-search="true"</code> attribute</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-brand k-btn" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-secondary k-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--end::Modal-->
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Validation State Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--label-right">
+                <div class="k-portlet__body">
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Success State</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12 validate">
+                            <select class="form-control is-valid k_selectpicker">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="valid-feedback">Success! You've done it.</div>
+                            <span class="form-text text-muted">Example help text that remains unchanged.</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Warning State</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12 validate">
+                            <select class="form-control is-invalid k_selectpicker">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                            <div class="invalid-feedback">Shucks, check the formatting of that and try again.</div>
+                            <span class="form-text text-muted">Example help text that remains unchanged.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="reset" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->
