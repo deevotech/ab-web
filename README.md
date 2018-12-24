@@ -12,10 +12,10 @@
     	cd afscbp-web
     
     //cài đặt Nodejs -> nếu đã có sẵn thì bỏ qua bước này
-	    sudo apt-get update
-	    sudo apt-get install nodejs
-	    sudo apt-get install npm
-	    nodejs -v
+	    	sudo apt-get update
+	    	sudo apt-get install nodejs
+		    sudo apt-get install npm
+	    	nodejs -v
     
  	//cài đặt Express
 		npm install express --save
