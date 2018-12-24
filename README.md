@@ -1,4 +1,4 @@
-# Nội dung bên dưới được thực hiện trên hệ điều hành Ubuntu
+# Thực hiện trên hệ điều hành Ubuntu
 	
 # Hướng dẫn cài đặt
 	//tạo thư mục chứa code dự án
@@ -14,7 +14,7 @@
     //cài đặt Nodejs -> nếu đã có sẵn thì bỏ qua bước này
 	    	sudo apt-get update
 	    	sudo apt-get install nodejs
-		    sudo apt-get install npm
+		sudo apt-get install npm
 	    	nodejs -v
     
  	//cài đặt Express
