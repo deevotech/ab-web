@@ -42,6 +42,6 @@
 		
 	//lưu lại và khởi động
 		systemctl daemon-reload		//reload hệ thống
-		systemctl enable demo_lina	//khởi động service
-		systemctl status demo_lina 	//kiểm tra trạng thái
+		systemctl enable collection-template.service	//khởi động service
+		systemctl status collection-template.service 	//kiểm tra trạng thái
 	
