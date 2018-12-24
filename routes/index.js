@@ -7,9 +7,9 @@ module.exports = function(app, passport){
 
 	/////////////////////////////////////////////////////////////////////////////
 
-	// app.get('/*',function(req, res) {
-	// 	res.render('default/custom/error/404-v4',{id:'../../brand_aside/layout'});
-	// });
+	app.get('/',function(req, res) {
+		res.render('default/custom/user/login-v2');
+	});
 
 	/////////////////////////////////////////////////////////////////////////////
 
