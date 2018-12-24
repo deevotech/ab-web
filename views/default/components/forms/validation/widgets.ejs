@@ -1,0 +1,184 @@
+<%layout('../brand_header/layout')%>
+
+<!-- begin:: Content -->
+<div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+    <!-- begin:: Content Head -->
+    <div class="k-content__head	k-grid__item">
+        <div class="k-content__head-main">
+            <h3 class="k-content__head-title">Form Widgets</h3>
+            <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Extended</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Forms</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Validation</a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Widgets</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+            </div>
+        </div>
+        <div class="k-content__head-toolbar">
+            <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                    <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        New
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                        <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                        <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                    <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Today</span>&nbsp;
+                    <span class="k-font-bold" id="k_dashboard_daterangepicker_date">Aug 16</span>
+                    <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- end:: Content Head -->
+
+    <!-- begin:: Content Body -->
+    <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+        <!--begin::Portlet-->
+        <div class="k-portlet">
+            <div class="k-portlet__head">
+                <div class="k-portlet__head-label">
+                    <h3 class="k-portlet__head-title">Form Widgets Validation Examples</h3>
+                </div>
+            </div>
+
+            <!--begin::Form-->
+            <form class="k-form k-form--label-right" id="k_form_1">
+                <div class="k-portlet__body">
+                    <div class="form-group form-group-last k-hide">
+                        <div class="alert alert-danger" role="alert" id="k_form_1_msg">
+                            <div class="alert-icon"><i class="flaticon-warning"></i></div>
+                            <div class="alert-text">
+                                Oh snap! Change a few things up and try submitting again.
+                            </div>
+                            <div class="alert-close">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true"><i class="la la-close"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Bootstrap Date Picker *</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group'>
+                                <input type='text' class="form-control" name="date" placeholder="Select date" id='k_datepicker' />
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="la la-calendar-check-o"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Select a date</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Bootstrap Date Time Picker *</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group date'>
+                                <input type='text' class="form-control" name="datetime" placeholder="Select date & time" id='k_datetimepicker' />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o glyphicon-th"></i></span>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Select a date time</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Bootstrap Time Picker *</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group date'>
+                                <input type='text' class="form-control" id='k_timepicker' placeholder="Select time" name="time" type="text" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-clock-o"></i></span>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Select time</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Bootstrap Date Range Picker *</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class='input-group' id='k_daterangepicker'>
+                                <input type='text' class="form-control" readonly name="daterange" placeholder="Select date range" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                </div>
+                            </div>
+                            <span class="form-text text-muted">Select a date range</span>
+                        </div>
+                    </div>
+                    <div class="k-form__seperator k-form__seperator--dashed k-form__seperator--space"></div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Bootstrap Select *</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <select class="form-control" id="k_bootstrap_select" multiple name="select">
+                                <optgroup label="Picnic" data-max-options="2">
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </optgroup>
+                                <optgroup label="Camping" data-max-options="2">
+                                    <option>Tent</option>
+                                    <option>Flashlight</option>
+                                    <option>Toilet Paper</option>
+                                </optgroup>
+                            </select>
+                            <span class="form-text text-muted">Select at least 2 and maximum 4 options</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Typeahead *</label>
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class="typeahead">
+                                <input class="form-control" id="k_typeahead" type="text" name="typeahead" placeholder="States of USA">
+                            </div>
+                            <span class="form-text text-muted">Please select a state</span>
+                        </div>
+                    </div>
+                    <div class="k-form__seperator k-form__seperator--dashed k-form__seperator--space"></div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-3 col-sm-12">Markdown *</label>
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <textarea name="markdown" class="form-control" data-provide="markdown" rows="10"></textarea>
+                            <span class="form-text text-muted">Enter some markdown content</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="k-portlet__foot">
+                    <div class="k-form__actions">
+                        <div class="row">
+                            <div class="col-lg-9 ml-lg-auto">
+                                <button type="submit" class="btn btn-success">Validate</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!--end::Form-->
+        </div>
+
+        <!--end::Portlet-->
+    </div>
+
+    <!-- end:: Content Body -->
+</div>
+
+<!-- end:: Content -->
