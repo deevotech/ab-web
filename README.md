@@ -9,13 +9,13 @@
 		git clone https://github.com/deevotech/afscbp-web
 		
 	//di chuyển vào thư mục afscbp-web
-    cd afscbp-web
+    	cd afscbp-web
     
-  //cài đặt Nodejs -> nếu đã có sẵn thì bỏ qua bước này
-    sudo apt-get update
-    sudo apt-get install nodejs
-    sudo apt-get install npm
-    nodejs -v
+    	//cài đặt Nodejs -> nếu đã có sẵn thì bỏ qua bước này
+	    sudo apt-get update
+	    sudo apt-get install nodejs
+	    sudo apt-get install npm
+	    nodejs -v
     
  	//cài đặt Express
 		npm install express --save
